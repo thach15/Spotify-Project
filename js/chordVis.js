@@ -1,6 +1,5 @@
 
 
-
 class ChordVis {
 
     constructor(_parentElement, _data) {
@@ -24,7 +23,7 @@ class ChordVis {
         vis.margin = { top: 20, right: 20, bottom: 200, left: 60 };
 
         vis.width = document.getElementById(vis.parentElement).getBoundingClientRect().width - vis.margin.left - vis.margin.right,
-            vis.height = 500 - vis.margin.top - vis.margin.bottom;
+            vis.height = 750 - vis.margin.top - vis.margin.bottom;
 
         // SVG drawing area
         vis.svg = d3.select("#" + vis.parentElement).append("svg")
@@ -32,6 +31,23 @@ class ChordVis {
             .attr("height", vis.height + vis.margin.top + vis.margin.bottom)
             .append("g")
             .attr("transform", "translate(" + vis.margin.left + "," + vis.margin.top + ")");
+
+        vis.tooltip = d3.select("body").append('div')
+            .attr('class', "tooltip")
+            .attr('id', 'chordTooltip');
+
+        vis.svg.append("circle").attr("cx",200).attr("cy",100).attr("r", 6).style("fill", "#D8BFD8")
+        vis.svg.append("circle").attr("cx",200).attr("cy",125).attr("r", 6).style("fill", "#c49dc4")
+        vis.svg.append("circle").attr("cx",200).attr("cy",150).attr("r", 6).style("fill", "#404080")
+        vis.svg.append("text").attr("x", 220).attr("y", 101).text("Increase in streams from previous release").style("font-size", "12px").attr("alignment-baseline","middle")
+        vis.svg.append("text").attr("x", 220).attr("y", 126).text("Maintained streams from previous release").style("font-size", "12px").attr("alignment-baseline","middle")
+        vis.svg.append("text").attr("x", 220).attr("y", 151).text("Decrease in streams from previous release").style("font-size", "12px").attr("alignment-baseline","middle")
+
+        vis.svg.append("text")
+            .attr("x", 175)
+            .attr("y", -220)
+            .attr("font-size", 20)
+            .text("2023's Most Popular Artists: How Their Streams Varied")
 
         vis.wrangleData()
     }
@@ -62,13 +78,11 @@ class ChordVis {
         });
         vis.minStreams = vis.arrangedData[1].streams;
         vis.maxStreams = vis.arrangedData[vis.dataSize - 1].streams;
-        console.log(vis.minStreams, vis.arrangedData[0]["artist(s)_name"])
-        console.log(vis.maxStreams, vis.arrangedData[vis.dataSize - 1]["artist(s)_name"])
 
         // Calculating n x n matrix size
         vis.step = 100000000;
-        vis.lowerLimit = Math.floor(vis.minStreams / step)*step;
-        vis.upperLimit = Math.ceil(vis.maxStreams / step)*step;
+        vis.lowerLimit = Math.floor(vis.minStreams / vis.step)*vis.step;
+        vis.upperLimit = Math.ceil(vis.maxStreams / vis.step)*vis.step;
         vis.n = (vis.upperLimit - vis.lowerLimit) / vis.step;
 
         // Creating empty matrix for chords
@@ -89,24 +103,52 @@ class ChordVis {
                     vis.artistMap[name].push(entry)
                 }
                 else {
-                    vis.artistMap[name] = entry;
+                    vis.artistMap[name] = [entry];
                 }
             }
         }
 
         // Building matrix for artists that appear more than once in hits
+        let count = 0;
         for (const artistEntryKey in vis.artistMap) {
 
             // Count only if artist appears more than once in data set
             let artistArray = vis.artistMap[artistEntryKey];
+
             if (artistArray.length > 1) {
 
-                for (let i = 0; i < artistArray.length - 1; i++) {
-                    // TO DO
+                // Sort by release date
+                artistArray.sort((a,b) => {
+                    let date1 = (a.released_year + "/" + a.released_month + "/" + a.released_day);
+                    let date2 = (b.released_year + "/" + b.released_month + "/" + b.released_day);
+                    return Date(date1) - Date(date2);
+                })
+
+                // Storing transitions in matrix
+                let prevHitStreamsFloor = Math.floor( artistArray[0].streams/ vis.step)*vis.step;
+                let prevIndex = Math.floor((prevHitStreamsFloor - vis.lowerLimit) / vis.step)
+                for (let i = 1; i < artistArray.length; i++) {
+
+                    // Calculating index from previous hit and current, incrementing proper indices in matrix
+                    let currHitStreamsFloor = Math.floor( artistArray[i].streams/ vis.step)*vis.step;
+                    let currIndex = Math.floor((currHitStreamsFloor - vis.lowerLimit) / vis.step)
+                    vis.matrix[prevIndex][currIndex] += 1;
+
+                    currHitStreamsFloor = prevHitStreamsFloor;
+                    currIndex = prevIndex;
+
+
+
+
                 }
+                count++;
+                // console.log(artistArray);
 
             }
         }
+        // console.log(count);
+
+        vis.updateVis();
 
 
     }
@@ -114,6 +156,142 @@ class ChordVis {
     updateVis() {
         let vis = this;
 
+        vis.res = d3.chord()
+            .padAngle(0.05)
+            .sortSubgroups(d3.descending)
+            (vis.matrix)
+
+        vis.svg
+            .datum(vis.res)
+            .append("g")
+            .selectAll("path")
+            .data(d => d)
+            .enter()
+            .append("path")
+            .attr("d", d3.ribbon()
+                .radius(190)
+            )
+            .on('mouseover', function(event, d){
+
+                d3.select(this)
+                    .attr('stroke-width', '1px')
+                    .attr('stroke', 'black')
+                    .attr('fill', 'black');
+
+                let lowEndMillionSource = (vis.lowerLimit + d["source"].index*vis.step) / (vis.step / 100);
+                let highEndMillionSource = (vis.lowerLimit + (d["source"].index+1)*vis.step) / (vis.step / 100);
+                let priorRange = lowEndMillionSource.toString() + " - " + highEndMillionSource.toString() + " M";
+
+                let lowEndMillionTarget = (vis.lowerLimit + d["target"].index*vis.step) / (vis.step / 100);
+                let highEndMillionTarget = (vis.lowerLimit + (d["target"].index+1)*vis.step) / (vis.step / 100);
+                let newRange = lowEndMillionTarget.toString() + " - " + highEndMillionTarget.toString() + " M";
+
+                vis.tooltip
+                    .style("fill", "white")
+                    .style("opacity", 1)
+                    .style("left", event.pageX + 20 + "px")
+                    .style("top", event.pageY + "px")
+                    .html(`
+                         <div style="border: thin solid grey; border-radius: 5px; background: #f7e4f7; padding: 5px; height: 75px">
+                             <h5 class="chordToolTipInfo">${d["source"].value} artists</h5> 
+                             <p class="chordToolTipInfo">from ${priorRange} to</p>
+                             <p class="chordToolTipInfo">${newRange} streams</p>                      
+                         </div>`);
+            })
+            .on('mouseout', function(event, d){
+                d3.select(this)
+                    .attr("fill", "#483248")
+                    .style("stroke", "#483248")
+                    .attr("stroke-width", 0.25)
+
+                vis.tooltip
+                    .style("opacity", 0)
+                    .style("left", 0)
+                    .style("top", 0)
+                    .html(``);
+            })
+            .style("fill", d => decideShade(d))
+            .style("stroke", "#483248")
+            .attr("stroke-width", 0.25)
+
+        console.log(vis.res)
+        vis.chordGroup = vis.svg
+            .datum(vis.res)
+            .append("g")
+            .selectAll("g")
+            .data(d => {
+                // console.log(d, d.groups)
+                return d.groups
+            })
+            .enter()
+
+
+
+        vis.chordGroup.append("g")
+            .append("path")
+            .style("fill", d => {
+                //console.log(d)
+                return "#483248";
+            })
+            .style("stroke", "black")
+            .attr("d", d3.arc()
+                .innerRadius(190)
+                .outerRadius(200)
+            )
+
+
+        vis.chordGroup.selectAll(".group-tick")
+            .data(d => groupTicks(d, vis.matrix.length))    // Controls the number of ticks: one tick each 38 here.
+            .join("g")
+            .attr("transform", d => `rotate(${d.angle * 180 / Math.PI - 90}) translate(200,0)`)
+            .append("line")               // By default, x1 = y1 = y2 = 0, so no need to specify it.
+            .attr("x2", 6)
+            .attr("stroke", "black")
+
+
+
+        let tickCount = 0;
+        vis.chordGroup.selectAll(".group-tick-label")
+            .data(d => groupTicksLabels(d, vis.matrix.length))
+            .enter()
+            .filter(d => d.value % vis.matrix.length === 0)
+            .append("g")
+            .attr("transform", d => `rotate(${d.angle * 180 / Math.PI - 90}) translate(200,0)`)
+            .append("text")
+            .attr("x", 8)
+            .attr("dy", ".35em")
+            .attr("transform", function(d) { return d.angle > Math.PI ? "rotate(180) translate(-16)" : null; })
+            .style("text-anchor", function(d) { return d.angle > Math.PI ? "end" : null; })
+            .text((d) => {
+                let lowEndMillion = (vis.lowerLimit + tickCount*vis.step) / (vis.step / 100);
+                let highEndMillion = (vis.lowerLimit + (tickCount+1)*vis.step) / (vis.step / 100);
+                tickCount += 1;
+                return lowEndMillion.toString() + " - " + highEndMillion.toString() + " M";
+            })
+            .style("font-size", 9)
+
+        vis.svg.attr("transform", "translate("+(vis.width / 3 - 50)+",300)")
+
+
+
+// Returns an array of tick angles and values for a given group and step.
+        function groupTicks(d) {
+            return [{value: 0, angle: d.startAngle}, {value: d.value, angle: d.endAngle}]
+        }
+        function groupTicksLabels(d) {
+            return [{value: 0, angle: (d.startAngle + d.endAngle) / 2}]
+        }
+
+        function decideShade(d) {
+            if (d["target"].index > d["source"].index)
+                return "#D8BFD8";
+            else if (d["target"].index === d["source"].index)
+                return "#c49dc4";
+            else
+                return "#966996";
+        }
+
 
     }
+
 }
