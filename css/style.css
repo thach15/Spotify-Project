@@ -10,3 +10,67 @@ h1 {
 .chordToolTipInfo {
 	margin: 0;
 }
+
+
+#hist-title {
+	font-weight: bold;
+	color: darkgreen;
+	font-size: 30px;
+	margin-left: 20px;
+}
+#yearRange {
+	width: 80%; /* Adjust the width as needed */
+	margin: 10px 0; /* Add margin for spacing */
+	appearance: none; /* Remove default appearance */
+	background: #d3d3d3; /* Set the background color */
+	height: 10px; /* Set the height */
+	border-radius: 5px; /* Add rounded corners */
+}
+
+#yearRange::-webkit-slider-thumb {
+	appearance: none; /* Remove default appearance */
+	width: 20px; /* Set the width of the thumb */
+	height: 20px; /* Set the height of the thumb */
+	background: #4CAF50; /* Set the color of the thumb */
+	border-radius: 50%; /* Make it a circle */
+	cursor: pointer; /* Add a pointer cursor */
+}
+.slider-label {
+	position: absolute;
+	padding: 5px; /* Add padding for space around the text */
+	background-color: darkseagreen; /* Set the background color of the label */
+	border: 1px solid darkgreen; /* Add a border to the label */
+	border-radius: 5px;
+
+
+}
+
+#sliderContainer {
+	padding-top: 30px;
+}
+#minLabel {
+	left: 808px; /* Adjust the left value as needed */
+}
+
+#summaryStats {
+
+	position: absolute;
+	padding: 10px;
+	border: 3px solid darkgreen;;
+	border-radius: 5px;
+	width: 350px;
+	height: 400px;
+	background-color: #E7FFCE;
+}
+
+#sumtitle {
+	color: darkgreen;
+}
+
+#hist-container{
+
+	padding: 10px;
+	border: 2px solid darkgreen;;
+	border-radius: 5px;
+	background-color: whitesmoke;
+}

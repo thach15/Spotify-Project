@@ -5,7 +5,7 @@ console.log("Hello JS world!");
 let promises = [
     d3.csv("Data/spotify-2023.csv"),
     d3.csv("Data/top-hits.csv"),
-   // d3.csv("Data/tracks_features.csv")
+    // d3.csv("Data/tracks_features.csv")
 ];
 
 Promise.all(promises)
@@ -27,4 +27,5 @@ function createVis(data) {
     // allData = data
     //
     let chordVis = new ChordVis("chordVis", mostStreamed2023);
+    let histVis = new HistVis("histVis", topHits);
 }
