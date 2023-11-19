@@ -2,7 +2,9 @@
 
 body {
 	font-family: 'Raleway', sans-serif;
+	/*background-color: black;*/
 }
+
 
 h1 {
 }
@@ -11,12 +13,34 @@ h1 {
 	margin: 0;
 }
 
+text {
+	fill: white;
+}
+
+.slide {
+	background-color: black;
+	height: 100vh;
+	/*display: flex;*/
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+#button-container {
+	position: fixed;
+}
+
+#down {
+	position: absolute;
+}
+
 
 #hist-title {
 	font-weight: bold;
-	color: darkgreen;
+	color: white;
 	font-size: 30px;
 	margin-left: 20px;
+	align-self: center;
 }
 #yearRange {
 	width: 80%; /* Adjust the width as needed */
@@ -53,24 +77,51 @@ h1 {
 }
 
 #summaryStats {
-
-	position: absolute;
+	/*position: absolute;*/
 	padding: 10px;
-	border: 3px solid darkgreen;;
-	border-radius: 5px;
+	border: 3px solid #C5D86D;;
+	border-radius: 10px;
 	width: 350px;
-	height: 400px;
-	background-color: #E7FFCE;
+	height: 300px;
+	background-color: #F46036;
 }
 
 #sumtitle {
-	color: darkgreen;
+	color: #C5D86D;
+}
+
+.sumlines {
+	color: #C5D86D;
 }
 
 #hist-container{
+	/*padding: 10px;*/
+	/*border: 2px solid darkgreen;;*/
+	/*border-radius: 5px;*/
+	/*background-color: whitesmoke;*/
+}
 
-	padding: 10px;
-	border: 2px solid darkgreen;;
-	border-radius: 5px;
-	background-color: whitesmoke;
+/* CloserLookVis */
+#songs-list {
+	width: 350px;
+	max-height: 450px;
+	overflow: scroll;
+}
+
+#info-box {
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+
+#closer-look-title {
+	font-weight: bold;
+	color: white;
+	font-size: 30px;
+	margin-left: 20px;
+}
+
+#album-title {
+	color: white;
+	margin-bottom: 30px;
 }

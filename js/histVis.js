@@ -107,6 +107,7 @@ class HistVis {
         vis.svg.select("g.axis-y")
             .transition()
             .duration(500)
+            .attr("color", "white")
             .call(d3.axisLeft(vis.y));
 
         let bars = vis.svg.selectAll("rect").data(vis.bins);
@@ -120,7 +121,7 @@ class HistVis {
             .attr("y", d => vis.y(d.length))
             .attr("width", d => vis.x(d.x1) - vis.x(d.x0) - 1)
             .attr("height", d => vis.height - vis.y(d.length))
-            .style("fill", "#4CAF50");
+            .style("fill", "#1B998B");
 
         bars.exit().remove();
 
@@ -129,6 +130,7 @@ class HistVis {
             .transition()
             .duration(500)
             .attr("transform", "translate(0," + vis.height + ")")
+            .attr("color", "white")
             .call(d3.axisBottom(vis.x));
 
         // Add summary statistics
@@ -141,12 +143,12 @@ class HistVis {
         d3.select("#summaryStats")
             .html(`
             <h3 id="sumtitle"><strong>Summary Statistics</strong></h3>
-            <p><strong>Selected Year:</strong> ${vis.selectedYear}</p>
-            <p><strong>Mean Duration:</strong> ${meanDuration.toFixed(2)} ms</p>
-            <p><strong>Median Duration:</strong> ${medDuration.toFixed(2)} ms</p>
+            <p class="sumlines"><strong>Selected Year:</strong> ${vis.selectedYear}</p>
+            <p class="sumlines"><strong>Mean Duration:</strong> ${meanDuration.toFixed(2)} ms</p>
+            <p class="sumlines"><strong>Median Duration:</strong> ${medDuration.toFixed(2)} ms</p>
    
-            <p><strong>Max Duration:</strong> ${maxDuration} ms</p>
-            <p><strong>Min Duration:</strong> ${minDuration} ms</p>
+            <p class="sumlines"><strong>Max Duration:</strong> ${maxDuration} ms</p>
+            <p class="sumlines"><strong>Min Duration:</strong> ${minDuration} ms</p>
         `);
 
 

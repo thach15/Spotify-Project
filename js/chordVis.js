@@ -36,9 +36,9 @@ class ChordVis {
             .attr('class', "tooltip")
             .attr('id', 'chordTooltip');
 
-        vis.svg.append("circle").attr("cx",200).attr("cy",100).attr("r", 6).style("fill", "#D8BFD8")
-        vis.svg.append("circle").attr("cx",200).attr("cy",125).attr("r", 6).style("fill", "#c49dc4")
-        vis.svg.append("circle").attr("cx",200).attr("cy",150).attr("r", 6).style("fill", "#404080")
+        vis.svg.append("circle").attr("cx",200).attr("cy",100).attr("r", 6).style("fill", "#D7263D")
+        vis.svg.append("circle").attr("cx",200).attr("cy",125).attr("r", 6).style("fill", "#F46036")
+        vis.svg.append("circle").attr("cx",200).attr("cy",150).attr("r", 6).style("fill", "#C5D86D")
         vis.svg.append("text").attr("x", 220).attr("y", 101).text("Increase in streams from previous release").style("font-size", "12px").attr("alignment-baseline","middle")
         vis.svg.append("text").attr("x", 220).attr("y", 126).text("Maintained streams from previous release").style("font-size", "12px").attr("alignment-baseline","middle")
         vis.svg.append("text").attr("x", 220).attr("y", 151).text("Decrease in streams from previous release").style("font-size", "12px").attr("alignment-baseline","middle")
@@ -46,7 +46,7 @@ class ChordVis {
         vis.svg.append("text")
             .attr("x", 175)
             .attr("y", -220)
-            .attr("font-size", 20)
+            .attr("font-size", 30)
             .text("2023's Most Popular Artists: How Their Streams Varied")
 
         vis.wrangleData()
@@ -200,8 +200,8 @@ class ChordVis {
             })
             .on('mouseout', function(event, d){
                 d3.select(this)
-                    .attr("fill", "#483248")
-                    .style("stroke", "#483248")
+                    .attr("fill", "#C5D86D")
+                    .style("stroke", "#C5D86D")
                     .attr("stroke-width", 0.25)
 
                 vis.tooltip
@@ -211,7 +211,7 @@ class ChordVis {
                     .html(``);
             })
             .style("fill", d => decideShade(d))
-            .style("stroke", "#483248")
+            .style("stroke", "#C5D86D")
             .attr("stroke-width", 0.25)
 
         console.log(vis.res)
@@ -231,7 +231,7 @@ class ChordVis {
             .append("path")
             .style("fill", d => {
                 //console.log(d)
-                return "#483248";
+                return "#C5D86D";
             })
             .style("stroke", "black")
             .attr("d", d3.arc()
@@ -284,11 +284,11 @@ class ChordVis {
 
         function decideShade(d) {
             if (d["target"].index > d["source"].index)
-                return "#D8BFD8";
+                return "#D7263D";
             else if (d["target"].index === d["source"].index)
-                return "#c49dc4";
+                return "#F46036";
             else
-                return "#966996";
+                return "#C5D86D";
         }
 
 
