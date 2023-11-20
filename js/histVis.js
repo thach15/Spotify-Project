@@ -77,7 +77,7 @@ class HistVis {
         vis.displayData = vis.data;
         vis.displayData = vis.displayData.filter(d => d.year === vis.selectedYear);
 
-        console.log("filtered", vis.displayData);
+        // console.log("filtered", vis.displayData);
 
         vis.updateVis();
 

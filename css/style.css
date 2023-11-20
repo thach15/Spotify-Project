@@ -13,6 +13,17 @@ h1 {
 	margin: 0;
 }
 
+.bubbleToolTipInfo {
+	margin: 0;
+}
+
+#bubble-select {
+	width: 11%;
+	margin-top: 20px;
+	margin-bottom: 0;
+	margin-left: 850px;
+}
+
 text {
 	fill: white;
 }

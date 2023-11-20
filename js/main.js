@@ -1,6 +1,11 @@
 /* main JS file */
 
+let bubbleVis;
+let chordVis;
+let histVis;
+let closerLookVis;
 
+let bubbleSelectedCategory;
 let promises = [
     d3.csv("Data/spotify-2023.csv"),
     d3.csv("Data/top-hits.csv"),
@@ -27,9 +32,10 @@ function createVis(data) {
 
     console.log(data);
 
-    let chordVis = new ChordVis("chordVis", mostStreamed2023);
-    let histVis = new HistVis("histVis", topHits);
-    let closerLookVis = new CloserLookVis("closerLookVis", taylorSwift, BTS);
+    bubbleVis = new BubbleVis("bubbleVis", topHits);
+    chordVis = new ChordVis("chordVis", mostStreamed2023);
+    histVis = new HistVis("histVis", topHits);
+    closerLookVis = new CloserLookVis("closerLookVis", taylorSwift, BTS);
 
     let currSlide = 0;
     let slides = ["chordVis", "hist-container", "closer-look-container"]
@@ -57,4 +63,10 @@ function createVis(data) {
         }
     }
 
+}
+
+function bubbleSelection() {
+    bubbleSelectedCategory =  document.getElementById('bubble-select').value;
+    bubbleVis.selection = bubbleSelectedCategory;
+    bubbleVis.wrangleData();
 }

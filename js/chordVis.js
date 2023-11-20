@@ -214,7 +214,7 @@ class ChordVis {
             .style("stroke", "#C5D86D")
             .attr("stroke-width", 0.25)
 
-        console.log(vis.res)
+        // console.log(vis.res)
         vis.chordGroup = vis.svg
             .datum(vis.res)
             .append("g")
