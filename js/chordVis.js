@@ -49,6 +49,36 @@ class ChordVis {
             .attr("font-size", 30)
             .text("2023's Most Popular Artists: How Their Streams Varied")
 
+        vis.svg.append("text")
+            .attr("x", 400)
+            .attr("y", -160)
+            .attr("font-size",13)
+            .text("Looking at the artists who released the songs with the most streams")
+
+        vis.svg.append("text")
+            .attr("x", 405)
+            .attr("y", -140)
+            .attr("font-size",13)
+            .text("in 2023, we can see how many artists were able to grow in streams")
+
+        vis.svg.append("text")
+            .attr("x", 410)
+            .attr("y", -120)
+            .attr("font-size",13)
+            .text("from one release to the next consecutive one, how many stayed in")
+
+        vis.svg.append("text")
+            .attr("x", 474)
+            .attr("y", -100)
+            .attr("font-size",13)
+            .text("the same range, and how many shrunk in stream range,")
+
+        vis.svg.append("text")
+            .attr("x", 580)
+            .attr("y", -80)
+            .attr("font-size",13)
+            .text("for each range of 100 million streams.")
+
         vis.wrangleData()
     }
 

@@ -46,10 +46,40 @@ class BubbleVis {
             .text("Number of Hits by Top Artists by Year")
 
         vis.svg.append("text")
-            .attr("x", vis.width - 375)
+            .attr("x", vis.width - 350)
             .attr("y", 200)
-            .attr("font-size",15)
+            .attr("font-size",13)
             .text("Hover over a bubble to find out top artists and their hit count!")
+
+        vis.svg.append("text")
+            .attr("x", 20)
+            .attr("y", 200)
+            .attr("font-size",13)
+            .text("Using data collected on the most popular songs")
+
+        vis.svg.append("text")
+            .attr("x", 20)
+            .attr("y", 220)
+            .attr("font-size",13)
+            .text("on Spotify released from 1998 to 2020, we can select")
+
+        vis.svg.append("text")
+            .attr("x", 20)
+            .attr("y", 240)
+            .attr("font-size",13)
+            .text("any range of years years and see which artists have had")
+
+        vis.svg.append("text")
+            .attr("x", 20)
+            .attr("y", 260)
+            .attr("font-size",13)
+            .text("the most (and the least) hits in that time span.")
+
+        vis.svg.append("text")
+            .attr("x", 20)
+            .attr("y", 280)
+            .attr("font-size",13)
+            .text("The larger the bubble, the higher the number of hits!")
 
         vis.wrangleData()
     }
