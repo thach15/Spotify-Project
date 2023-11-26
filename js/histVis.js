@@ -5,7 +5,7 @@ class HistVis {
         //this.formElement = _formElement;
         this.data = _data;
         this.data.forEach(d => {
-            d.duration_ms = +d.duration_ms;
+            d.duration_ms = +d.duration_ms / 60000;
             d.year = + d.year;
         })
         this.initVis()
@@ -144,11 +144,11 @@ class HistVis {
             .html(`
             <h3 id="sumtitle"><strong>Summary Statistics</strong></h3>
             <p class="sumlines"><strong>Selected Year:</strong> ${vis.selectedYear}</p>
-            <p class="sumlines"><strong>Mean Duration:</strong> ${meanDuration.toFixed(2)} ms</p>
-            <p class="sumlines"><strong>Median Duration:</strong> ${medDuration.toFixed(2)} ms</p>
+            <p class="sumlines"><strong>Mean Duration:</strong> ${meanDuration.toFixed(2)} min</p>
+            <p class="sumlines"><strong>Median Duration:</strong> ${medDuration.toFixed(2)} min</p>
    
-            <p class="sumlines"><strong>Max Duration:</strong> ${maxDuration} ms</p>
-            <p class="sumlines"><strong>Min Duration:</strong> ${minDuration} ms</p>
+            <p class="sumlines"><strong>Max Duration:</strong> ${maxDuration.toFixed(2)} min</p>
+            <p class="sumlines"><strong>Min Duration:</strong> ${minDuration.toFixed(2)} min</p>
         `);
 
 
