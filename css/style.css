@@ -54,8 +54,9 @@ text {
 	align-self: center;
 }
 #yearRange {
-	width: 80%; /* Adjust the width as needed */
-	margin: 10px 0; /* Add margin for spacing */
+	width: 70%; /* Adjust the width as needed */
+	 /* Add margin for spacing */
+	margin-right: 100px ;
 	appearance: none; /* Remove default appearance */
 	background: #d3d3d3; /* Set the background color */
 	height: 10px; /* Set the height */
@@ -84,7 +85,10 @@ text {
 	padding-top: 30px;
 }
 #minLabel {
-	left: 808px; /* Adjust the left value as needed */
+	left: 950px; /* Adjust the left value as needed */
+}
+#maxLabel {
+	right: 90px;
 }
 
 #summaryStats {
@@ -95,6 +99,10 @@ text {
 	width: 350px;
 	height: 300px;
 	background-color: #F46036;
+}
+
+#inter-container{
+	padding-bottom: 200px;
 }
 
 #sumtitle {
@@ -110,6 +118,54 @@ text {
 	/*border: 2px solid darkgreen;;*/
 	/*border-radius: 5px;*/
 	/*background-color: whitesmoke;*/
+}
+
+/*#message-container{*/
+/*	color: white;*/
+/*	font-size: 20px;*/
+/*	height: 300px;*/
+
+/*}*/
+
+#message-title{
+	font-weight: bold;
+	font-size: 30px;
+}
+
+#message-container {
+	color: white;
+	--border-size: 3px;
+	--border-angle: 0turn;
+	height: 50vmin;
+	background-image: conic-gradient(
+			from var(--border-angle),
+			#112,
+			#112 50%,
+			#112
+	),
+	conic-gradient(from var(--border-angle), transparent 20%, #F46036, #C5D86D);
+	background-size: calc(100% - (var(--border-size) * 2))
+	calc(100% - (var(--border-size) * 2)),
+	cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+
+	animation: bg-spin 3s linear infinite;
+	@keyframes bg-spin {
+		to {
+			--border-angle: 1turn;
+		}
+	}
+
+	&:hover {
+		animation-play-state: paused;
+	}
+}
+
+@property --border-angle {
+	syntax: "<angle>";
+	inherits: true;
+	initial-value: 0turn;
 }
 
 /* CloserLookVis */
