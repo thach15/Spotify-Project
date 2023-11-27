@@ -14,10 +14,10 @@ class HistVis {
     initVis() {
         let vis = this;
 
-        vis.margin = {top: 20, right: 20, bottom: 200, left: 60};
+        vis.margin = {top: 50, right: 70, bottom: 200, left: 100};
 
         vis.width = document.getElementById(vis.parentElement).getBoundingClientRect().width - vis.margin.left - vis.margin.right;
-        vis.height = 500;
+        vis.height = 440;
 
         // SVG drawing area
         vis.svg = d3.select("#" + vis.parentElement).append("svg")
@@ -48,9 +48,9 @@ class HistVis {
         vis.svg.append("text")
             .attr("class", "x-axis-label")
             .attr("x", vis.width / 2)
-            .attr("y", vis.height + vis.margin.top + 40) // Adjust the y-position as needed
+            .attr("y", vis.height + 40) // Adjust the y-position as needed
             .style("text-anchor", "middle")
-            .text("Duration (in milliseconds)");
+            .text("Duration (in minutes)");
 
         // Add y-axis label
         vis.svg.append("text")
@@ -69,7 +69,7 @@ class HistVis {
         let vis = this;
 
         if (vis.selectedYear === undefined){
-            vis.selectedYear = 1999;
+            vis.selectedYear = 2019;
         }
 
         //console.log("selected year", vis.selectedYear);
@@ -121,7 +121,7 @@ class HistVis {
             .attr("y", d => vis.y(d.length))
             .attr("width", d => vis.x(d.x1) - vis.x(d.x0) - 1)
             .attr("height", d => vis.height - vis.y(d.length))
-            .style("fill", "#1B998B");
+            .style("fill", "#593C8F");
 
         bars.exit().remove();
 

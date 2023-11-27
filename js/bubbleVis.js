@@ -17,17 +17,17 @@ class BubbleVis {
     initVis() {
         let vis = this;
 
-        vis.margin = {top: 20, right: 20, bottom: 200, left: 60};
+        vis.margin = {top: 80, right: 80, bottom: 200, left: 40};
 
-        vis.width = document.getElementById(vis.parentElement).getBoundingClientRect().width - vis.margin.left - vis.margin.right,
-            vis.height = 800 - vis.margin.top - vis.margin.bottom;
+        vis.width = document.getElementById(vis.parentElement).getBoundingClientRect().width - vis.margin.left - vis.margin.right;
+        vis.height = 800 - vis.margin.top - vis.margin.bottom;
 
         // SVG drawing area
         vis.svg = d3.select("#" + vis.parentElement).append("svg")
             .attr("width", vis.width + vis.margin.left + vis.margin.right)
             .attr("height", vis.height + vis.margin.top + vis.margin.bottom)
             .append("g")
-            .attr("transform", "translate(" + vis.margin.left + "," + vis.margin.top - 50 + ")");
+            .attr("transform", `translate(${vis.margin.left}, ${vis.margin.top})`); // + vis.margin.left.toString() + "," + vis.margin.top.toString() - 50 + ")");
 
         vis.tooltip = d3.select("body").append('div')
             .attr('class', "tooltip")
@@ -41,44 +41,45 @@ class BubbleVis {
 
         vis.svg.append("text")
             .attr("x", vis.width / 3 - 15)
-            .attr("y", 20)
+            .attr("y", 30)
             .attr("font-size", 30)
             .text("Number of Hits by Top Artists by Year")
 
         vis.svg.append("text")
-            .attr("x", vis.width - 350)
+            .attr("x", vis.width)
             .attr("y", 200)
-            .attr("font-size",13)
+            .attr("text-anchor", "end")
+            .attr("font-size",14)
             .text("Hover over a bubble to find out top artists and their hit count!")
 
         vis.svg.append("text")
             .attr("x", 20)
             .attr("y", 200)
-            .attr("font-size",13)
+            .attr("font-size",14)
             .text("Using data collected on the most popular songs")
 
         vis.svg.append("text")
             .attr("x", 20)
             .attr("y", 220)
-            .attr("font-size",13)
+            .attr("font-size",14)
             .text("on Spotify released from 1998 to 2020, we can select")
 
         vis.svg.append("text")
             .attr("x", 20)
             .attr("y", 240)
-            .attr("font-size",13)
+            .attr("font-size",14)
             .text("any range of years years and see which artists have had")
 
         vis.svg.append("text")
             .attr("x", 20)
             .attr("y", 260)
-            .attr("font-size",13)
+            .attr("font-size",14)
             .text("the most (and the least) hits in that time span.")
 
         vis.svg.append("text")
             .attr("x", 20)
             .attr("y", 280)
-            .attr("font-size",13)
+            .attr("font-size",14)
             .text("The larger the bubble, the higher the number of hits!")
 
         vis.wrangleData()

@@ -38,16 +38,16 @@ function createVis(data) {
     closerLookVis = new CloserLookVis("closerLookVis", taylorSwift, BTS);
 
     let currSlide = 0;
-    let slides = ["chordVis", "hist-container", "closer-look-container"]
+    let slides = ["title", "bubbleVis", "chordVis", "hist-container", "main-message", "closer-look-container"]
 
     let upButton = document.querySelector("#up");
     let downButton = document.querySelector("#down");
     upButton.addEventListener("click", () => changeSlide("up"));
     downButton.addEventListener("click", () => changeSlide("down"));
 
-    const changeSlide = (dir) => {
+    const changeSlide = (curr, next) => {
         if (dir === "down") {
-            if (currSlide < 2) {
+            if (currSlide < slides.length - 1) {
                 currSlide++;
                 let nextSlide = slides[currSlide];
                 console.log(nextSlide)

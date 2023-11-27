@@ -34,10 +34,10 @@ class CloserLookVis {
     initVis() {
         let vis = this;
 
-        vis.margin = { top: 20, right: 20, bottom: 200, left: 100 };
+        vis.margin = { top: 20, right: 20, bottom: 200, left: 80 };
 
-        vis.width = 800 - vis.margin.left - vis.margin.right;
-        vis.height = 650 - vis.margin.top - vis.margin.bottom;
+        vis.width = 840 - vis.margin.left - vis.margin.right;
+        vis.height = 600 - vis.margin.top - vis.margin.bottom;
 
         // SVG drawing area
         vis.svg = d3.select("#" + vis.parentElement).append("svg")
@@ -46,7 +46,14 @@ class CloserLookVis {
             .append("g")
             .attr("transform", "translate(" + vis.margin.left + "," + vis.margin.top + ")");
 
-        vis.infoBox = d3.select("#info-box").append("div")
+        vis.infoBox = d3.select("#info-box")
+            .append("div")
+            .attr("id", "info");
+
+        vis.infoBox
+            .append("div")
+            .text("Click on the dots to learn about an album!")
+            .style("margin-top", "170px")
 
         // Initialize scales
         vis.x = d3.scalePoint()
@@ -70,6 +77,15 @@ class CloserLookVis {
             .attr("class", "axis y-axis")
             .attr("transform", "translate(0, 0)")
             .call(vis.yAxis);
+
+        // Add y-axis label
+        vis.svg.append("text")
+            .attr("class", "y-axis-label")
+            .attr("transform", "rotate(-90)")
+            .attr("x", -vis.height / 2)
+            .attr("y", -30)
+            .style("text-anchor", "middle")
+            .text("Popularity");
 
         vis.wrangleData()
     }
@@ -113,6 +129,18 @@ class CloserLookVis {
     updateVis() {
         let vis = this;
 
+        // Function to truncate long text
+        let wrap = function() {
+            var self = d3.select(this),
+                textLength = self.node().getComputedTextLength(),
+                text = self.text();
+            while (textLength > (150) && text.length > 0) {
+                text = text.slice(0, -1);
+                self.text(text + '...');
+                textLength = self.node().getComputedTextLength();
+            }
+        };
+
         // Update x axis
         let albums = vis.displayData.map(d => d.album).reverse();
         vis.x.domain(albums);
@@ -122,7 +150,8 @@ class CloserLookVis {
             .call(vis.xAxis)
             .selectAll("text")
             .style("text-anchor", "end")
-            .attr("transform", "rotate(-65)");
+            .attr("transform", "rotate(-50)")
+            .each(wrap);
 
         // Update y axis
         vis.y.domain([0,100])
@@ -149,7 +178,8 @@ class CloserLookVis {
             .attr("class", "line")
             .attr("d", line(vis.displayData))
             .attr("fill", "none")
-            .attr("stroke", "#D7263D")
+            .attr("stroke", "#DB5461")
+            .attr("stroke-width", 4);
 
         // Create data point circles
         vis.circles = vis.svg.selectAll(".circles")
@@ -158,46 +188,42 @@ class CloserLookVis {
 
         vis.circles.exit().remove();
 
+        let highlightedCircle = d3.select(null);
+
         vis.circles.enter()
             .append("circle")
             .merge(vis.circles)
-            .on("click", (e,d) => vis.showInfo(d))
+            .on("click", function(e,d) {
+                highlightedCircle.transition().duration(300).attr("fill", "#d1e08a").attr("stroke", "#d1e08a").attr("r", 5);
+                highlightedCircle = d3.select(this);
+                highlightedCircle.transition().duration(300).attr("fill", "white").attr("stroke", "white").attr("r", 8);
+                vis.showInfo(d);
+            })
             .transition()
             .duration(800)
             .attr("class", "circles")
             .attr("cx", d => vis.x(d.album))
             .attr("cy", d => vis.y(d.avgPopularity))
             .attr("r", 5)
-            .attr("stroke", "#F46036")
-            .attr("fill", "#F46036");
+            .attr("stroke", "#d1e08a")
+            .attr("fill", "#d1e08a");
     }
 
     showInfo(d){
         let vis = this;
 
-        vis.infoBox
-            .style("background-color", "#2E294E")
-            .style("width", "640px")
-            .style("padding", "20px")
-            .style("border-radius", "10px");
+        vis.infoBox.style("background-color", "#593C8F")
         vis.infoBox.html("");
         vis.infoBox.append("h3").attr("id", "album-title").text(d.album)
+        vis.infoBox.append("p").attr("class", "album-info").text(`Release Date: ${d.rows[0].release_date}`)
         vis.infoBox.append("div")
             .attr("id", "attributes")
-
+        console.log(d.rows[0])
 
         let danceability = new Attribute("attributes", "danceability", d.rows)
         let acousticness = new Attribute("attributes", "acousticness", d.rows)
         let valence = new Attribute("attributes", "valence", d.rows)
         let speechiness = new Attribute("attributes", "speechiness", d.rows)
-
-        // let tableDiv = vis.infoBox.append("div").attr("id", "songs-list")
-        // let infoTable = tableDiv.append("table").attr("class", "table")
-        // for (let i = 0; i < d.rows.length; i++) {
-        //     console.log(d.rows[i])
-        //     let row = infoTable.append("tr")
-        //     row.append("td").text(d.rows[i].name)
-        // }
     }
 }
 
@@ -214,30 +240,30 @@ class Attribute {
     initVis() {
         let vis = this;
 
-        vis.margin = { top: 20, right: 20, bottom: 200, left: 20 };
+        vis.margin = { top: 20, right: 15, bottom: 25, left: 15 };
 
-        vis.width = 100 - vis.margin.left - vis.margin.right;
+        vis.width = 110 - vis.margin.left - vis.margin.right;
         vis.height = 250 - vis.margin.top - vis.margin.bottom;
 
         vis.svg = d3.select("#" + vis.parentElement).append("svg")
-            .attr("width", 140)
-            .attr("height", 320)
+            .attr("width", vis.width + vis.margin.left + vis.margin.right)
+            .attr("height", vis.height + vis.margin.top + vis.margin.bottom)
 
         vis.svg.append("rect")
-            .attr("x", 20)
-            .attr("y", 20)
-            .attr("width", 100)
-            .attr("height", 250)
+            .attr("x", vis.margin.left)
+            .attr("y", vis.margin.top)
+            .attr("width", vis.width)
+            .attr("height", vis.height)
             .attr("fill", "black");
 
         vis.svg.append("text")
-            .attr("x", 70)
-            .attr("y", 290)
+            .attr("x", vis.margin.left + vis.width / 2)
+            .attr("y", vis.height + vis.margin.top + vis.margin.bottom - 5)
             .style("text-anchor", "middle")
             .text(vis.attribute);
 
         vis.heightScale = d3.scaleLinear()
-            .range([0,250])
+            .range([0,vis.height])
             .domain([0,1]);
 
         vis.wrangleData();
@@ -256,17 +282,17 @@ class Attribute {
         let percentage = d3.format(".0%")
 
         vis.svg.append("text")
-            .attr("x", 70)
+            .attr("x", vis.margin.left + vis.width / 2)
             .attr("y", 12)
             .style("text-anchor", "middle")
             .text(percentage(vis.avg))
 
         vis.svg.append("rect")
-            .attr("x", 20)
-            .attr("y", 270 - vis.heightScale(vis.avg))
-            .attr("width", 100)
+            .attr("x", vis.margin.left)
+            .attr("y", vis.height + vis.margin.top - vis.heightScale(vis.avg))
+            .attr("width", vis.width)
             .attr("height", vis.heightScale(vis.avg))
-            .attr("fill", "#F46036")
+            .attr("fill", "#d1e08a")
             .transition()
             .duration(500);
     }
