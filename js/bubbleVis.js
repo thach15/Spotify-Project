@@ -37,7 +37,7 @@ class BubbleVis {
             .range([4, 30])
 
         vis.colorScale = d3.scaleLinear()
-            .range(['#d1e08a','#b1c262'])
+            .range(['#d0dba3','#90a540'])
 
         vis.svg.append("text")
             .attr("x", vis.width / 3 - 15)
