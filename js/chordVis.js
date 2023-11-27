@@ -212,7 +212,8 @@ class ChordVis {
                 d3.select(this)
                     .attr('stroke-width', '1px')
                     .attr('stroke', 'black')
-                    .attr('fill', 'black');
+                    .attr('fill', 'black')
+                    .attr("opacity", "100%");
 
                 let lowEndMillionSource = (vis.lowerLimit + d["source"].index*vis.step) / (vis.step / 100);
                 let highEndMillionSource = (vis.lowerLimit + (d["source"].index+1)*vis.step) / (vis.step / 100);
@@ -239,6 +240,7 @@ class ChordVis {
                     .attr("fill", "#FFD9CE")
                     .style("stroke", "#FFD9CE")
                     .attr("stroke-width", 0.25)
+                    .attr("opacity", "80%");
 
                 vis.tooltip
                     .style("opacity", 0)
@@ -249,6 +251,7 @@ class ChordVis {
             .style("fill", d => decideShade(d))
             .style("stroke", "#FFD9CE")
             .attr("stroke-width", 0.25)
+            .attr("opacity", "80%");
 
         // console.log(vis.res)
         vis.chordGroup = vis.svg

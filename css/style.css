@@ -11,18 +11,25 @@ body {
 h1 {
 }
 
+button {
+	background-color: #171738;
+	border-radius: 10px;
+	border: 5px solid #FFD9CE;
+	color:#FFD9CE;
+}
+
 .next {
 	position: absolute;
 	width: 70px;
-	height: 30px;
+	height: 40px;
 	/*margin-top: 130px;*/
-	transform: translateY(90vh);
+	transform: translateY(91vh);
 }
 
 .prev {
 	position: absolute;
 	width: 100px;
-	height: 30px;
+	height: 40px;
 	/*margin-top: 130px;*/
 	transform: translate(-42vw, 3vh);
 }
@@ -30,15 +37,15 @@ h1 {
 .next-message {
 	position: absolute;
 	width: 70px;
-	height: 30px;
+	height: 40px;
 	/*margin-top: 130px;*/
-	transform: translateY(40vh);
+	transform: translateY(43vh);
 }
 
 .prev-message {
 	position: absolute;
 	width: 100px;
-	height: 30px;
+	height: 40px;
 	/*margin-top: 130px;*/
 	transform: translate(-42vw, -45vh);
 }
