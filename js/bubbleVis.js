@@ -90,6 +90,10 @@ class BubbleVis {
 
         vis.arrangedData = [];
 
+        vis.lowYear = +vis.selection.slice(0,4);
+        vis.highYear = +vis.selection.slice(5,9);
+
+
         let countingDict = {};
         vis.data.forEach(d => {
             if (d.year >= vis.lowYear && d.year <= vis.highYear) {
