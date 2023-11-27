@@ -88,6 +88,8 @@ class BubbleVis {
     wrangleData() {
         let vis = this;
 
+        vis.arrangedData = [];
+
         let countingDict = {};
         vis.data.forEach(d => {
             if (d.year >= vis.lowYear && d.year <= vis.highYear) {
@@ -100,16 +102,16 @@ class BubbleVis {
             }
         });
 
-        console.log("countingDict")
-        console.log(countingDict)
+        // console.log("countingDict")
+        // console.log(countingDict)
         for (const indivArtist in countingDict) {
             vis.arrangedData.push({
                 artist: indivArtist,
                 count: countingDict[indivArtist]
             })
         }
-        console.log("vis.arrangedData")
-        console.log(vis.arrangedData)
+        // console.log("vis.arrangedData")
+        // console.log(vis.arrangedData)
 
 
         vis.updateVis();
@@ -125,13 +127,13 @@ class BubbleVis {
         vis.areaScale.domain([vis.minCount, vis.maxCount]);
         vis.colorScale.domain([vis.minCount, vis.maxCount]);
         let numNodes = vis.arrangedData.length;
-        console.log("numnodes")
-        console.log(numNodes)
+        // console.log("numnodes")
+        // console.log(numNodes)
         vis.nodes = d3.range(numNodes).map(function(d, i) {
             return {radius: vis.areaScale(vis.arrangedData[i].count), artist: vis.arrangedData[i].artist, count: vis.arrangedData[i].count}
         })
-        console.log("nodes")
-        console.log(vis.nodes)
+        // console.log("nodes")
+        // console.log(vis.nodes)
 
 
         let tickCount = 0;
@@ -145,11 +147,13 @@ class BubbleVis {
 
 
         function ticked() {
-            console.log("in ticked")
-            let circle = vis.svg
-                .selectAll('circle')
+            // console.log("in ticked")
+            vis.svg.selectAll("circle").remove();
+
+            vis.svg.selectAll('circle')
                 .data(vis.nodes)
-                .join('circle')
+                .enter()
+                .append('circle')
                 .attr('r', function(d) {
                     return d.radius
                 })
@@ -191,6 +195,9 @@ class BubbleVis {
                         .style("top", 0)
                         .html(``);
                 })
+
+
+
         }
 
 
