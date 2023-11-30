@@ -1,15 +1,13 @@
 
-
 class CloserLookVis {
 
-    constructor(_parentElement, _TSdata) {
+    constructor(_parentElement, data, artistName, personalized) {
         this.parentElement = _parentElement;
-        this.TSdata = _TSdata;
-        this.selectedData = _TSdata
-        this.displayData = _TSdata;
+        this.data = data;
+        this.selectedData = data
+        this.displayData = data;
 
-        this.TSdata.forEach(d => {
-            d.bpm = +d.bpm;
+        this.data.forEach(d => {
             d["acousticness"] = +d["acousticness"];
             d["danceability"] = +d["danceability"];
             d["energy"] = +d["energy"];
@@ -20,12 +18,11 @@ class CloserLookVis {
             d["valence"] = +d["valence"];
             d["popularity"] = +d["popularity"];
             d["duration_ms"] = +d["duration_ms"];
-            // d.release_date = new Date(d.released_year, d.released_month, d.released_day);
         })
 
         this.formatDate = d3.timeFormat("%Y-%m-%d");
 
-        this.artist = "Taylor Swift"
+        this.artist = artistName;
 
         this.initVis();
     }
@@ -45,6 +42,8 @@ class CloserLookVis {
             .attr("height", vis.height + vis.margin.top + vis.margin.bottom)
             .append("g")
             .attr("transform", "translate(" + vis.margin.left + "," + vis.margin.top + ")");
+
+        document.getElementById("closer-look-title").innerHTML = `A Closer Look: ${this.artist}`;
 
         vis.infoBox = d3.select("#info-box")
             .append("div")
@@ -121,7 +120,7 @@ class CloserLookVis {
             d.avgPopularity = totalPopularity / d.rows.length;
         })
 
-        // console.log(vis.displayData)
+        console.log("display data", vis.displayData)
 
         vis.updateVis();
     }
@@ -223,7 +222,7 @@ class CloserLookVis {
         let danceability = new Attribute("attributes", "danceability", d.rows)
         let acousticness = new Attribute("attributes", "acousticness", d.rows)
         let valence = new Attribute("attributes", "valence", d.rows)
-        let speechiness = new Attribute("attributes", "speechiness", d.rows)
+        let energy = new Attribute("attributes", "energy", d.rows)
     }
 }
 
