@@ -61,6 +61,18 @@ class HistVis {
             .style("text-anchor", "middle")
             .text("Frequency");
 
+        // Add a vertical line for median value
+        vis.svg.append("line")
+            .attr("class", "median-line")
+            .style("stroke", "#F46036");
+
+        // Add label
+        vis.svg.append("text")
+            .attr("class", "median-label")
+            .attr("text-anchor", "middle")
+            .style("fill", "white")
+            .style("font-size", "12px");
+
         vis.wrangleData();
 
     }
@@ -125,6 +137,22 @@ class HistVis {
 
         bars.exit().remove();
 
+        // Update the vertical line for median
+        let med = vis.x(d3.median(vis.displayData, d => d.duration_ms));
+        let medDuration = d3.median(vis.displayData, d => d.duration_ms);
+
+        vis.svg.select(".median-line")
+            .attr("x1", med)
+            .attr("x2", med)
+            .attr("y1", 0)
+            .attr("y2", vis.height)
+            .raise();
+
+        vis.svg.select(".median-label")
+            .attr("x", med)
+            .attr("y", -8)
+            .text(medDuration.toFixed(2) + " min");
+
         // Add axes
         vis.svg.select("g.axis-x")
             .transition()
@@ -135,7 +163,7 @@ class HistVis {
 
         // Add summary statistics
         let meanDuration = d3.mean(vis.displayData, d => d.duration_ms);
-        let medDuration = d3.median(vis.displayData, d => d.duration_ms);
+        //let medDuration = d3.median(vis.displayData, d => d.duration_ms);
         //let modeDuration = d3.mode(vis.displayData, d => d.duration_ms);
         let maxDuration = d3.max(vis.displayData, d => d.duration_ms);
         let minDuration = d3.min(vis.displayData, d => d.duration_ms);
