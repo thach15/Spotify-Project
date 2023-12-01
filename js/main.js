@@ -9,7 +9,14 @@ let bubbleSelectedCategory;
 let promises = [
     d3.csv("Data/spotify-2023.csv"),
     d3.csv("Data/top-hits.csv"),
-    d3.csv("Data/taylor_swift_spotify.csv")
+    d3.json("Data/TSwift.json"),
+    d3.json("Data/Beyonce.json"),
+    d3.json("Data/BTS.json"),
+    d3.json("Data/FrankOcean.json"),
+    d3.json("Data/KendrickLamar.json"),
+    d3.json("Data/MCR.json"),
+    d3.json("Data/Queen.json"),
+    d3.json("Data/RadioHead.json")
 ];
 
 Promise.all(promises)
@@ -25,54 +32,53 @@ async function createVis(data) {
 
     let mostStreamed2023 = data[0];
     let topHits = data[1];
-    let taylorSwift = data[2];
+    let TSwift = data[2];
+    let Beyonce = data[3];
+    let BTS = data[4];
+    let FrankOcean = data[5];
+    let KendrickLamar = data[6];
+    let MCR = data[7];
+    let Queen = data[8];
+    let RadioHead = data[9];
     let personalizedData = [];
     let topArtist = null;
 
     console.log(data);
 
-    const args = new URLSearchParams(window.location.search);
-    const code = args.get('code');
-
-    if (localStorage.getItem('access_token')) {
-        localStorage.clear();
-    }
-
-    if (code) {
-        await getAccessToken(code);
-    }
-
-    const access_token = localStorage.getItem('access_token');
-
-    if (access_token) {
-        const topArtists = await fetchTopArtist(access_token);
-        topArtist = topArtists.items[0];
-        console.log("the top artist is", topArtist);
-        const albums = await fetchAlbums(access_token, topArtist.id);
-        console.log("albums are", albums);
-        for (let i = 0; i < albums.length; i++) {
-            const tracks = await fetchTracks(access_token, albums[i]);
-            console.log("tracks:", tracks)
-            personalizedData = personalizedData.concat(tracks);
-        }
-        console.log("got the data!!!")
-        console.log(personalizedData);
-    } else {
-        console.log("no access token")
-    }
-
-
+    // const args = new URLSearchParams(window.location.search);
+    // const code = args.get('code');
+    //
+    // if (localStorage.getItem('access_token')) {
+    //     localStorage.clear();
+    // }
+    //
+    // if (code) {
+    //     await getAccessToken(code);
+    // }
+    //
+    // const access_token = localStorage.getItem('access_token');
+    //
+    // if (access_token) {
+    //     const topArtists = await fetchTopArtist(access_token);
+    //     topArtist = topArtists.items[0];
+    //     console.log("the top artist is", topArtist);
+    //     const albums = await fetchAlbums(access_token, topArtist.id);
+    //     console.log("albums are", albums);
+    //     for (let i = 0; i < albums.length; i++) {
+    //         const tracks = await fetchTracks(access_token, albums[i]);
+    //         console.log("tracks:", tracks)
+    //         personalizedData = personalizedData.concat(tracks);
+    //     }
+    //     console.log("got the data!!!")
+    //     console.log(personalizedData);
+    // } else {
+    //     console.log("no access token")
+    // }
 
     bubbleVis = new BubbleVis("bubbleVis", topHits);
     chordVis = new ChordVis("chordVis", mostStreamed2023);
     histVis = new HistVis("histVis", topHits);
-    // getToken();
-    if (personalizedData && topArtist) {
-        closerLookVis = new CloserLookVis("closerLookVis", personalizedData, topArtist.name, true);
-    } else {
-        closerLookVis = new CloserLookVis("closerLookVis", taylorSwift, "Taylor Swift", false);
-    }
-
+    closerLookVis = new CloserLookVis("closerLookVis", Beyonce, "Beyonce", false);
 }
 
 async function getAccessToken(code) {
@@ -139,8 +145,6 @@ async function fetchAlbums(token, artist_id) {
 }
 
 async function fetchTracks(token, album) {
-    // await timeout(3000);
-
     const album_id = album.id;
     const result = await fetch(`https://api.spotify.com/v1/albums/${album_id}/tracks`, {
         method: "GET", headers: { Authorization: `Bearer ${token}`}
@@ -148,7 +152,6 @@ async function fetchTracks(token, album) {
     const res = await result.json();
     const tracks = res.items;
     console.log("tracks are", tracks);
-    // await timeout(3000);
 
     // Get audio features
     const track_ids = tracks.map(album => album.id).join("%2C");

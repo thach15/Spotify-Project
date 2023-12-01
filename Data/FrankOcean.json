@@ -1,0 +1,2140 @@
+[
+    {
+        "artists": [
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/2h93pZq0e7k5yf4dywlkpM"
+                },
+                "href": "https://api.spotify.com/v1/artists/2h93pZq0e7k5yf4dywlkpM",
+                "id": "2h93pZq0e7k5yf4dywlkpM",
+                "name": "Frank Ocean",
+                "type": "artist",
+                "uri": "spotify:artist:2h93pZq0e7k5yf4dywlkpM"
+            }
+        ],
+        "disc_number": 1,
+        "duration_ms": 314075,
+        "explicit": true,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/track/19YKaevk2bce4odJkP5L22"
+        },
+        "href": "https://api.spotify.com/v1/tracks/19YKaevk2bce4odJkP5L22",
+        "id": "19YKaevk2bce4odJkP5L22",
+        "is_local": false,
+        "name": "Nikes",
+        "preview_url": "https://p.scdn.co/mp3-preview/28e1dce03e8ded7252036d30e440fe1113fead4c?cid=ff6b74c55ca247b4834cfc7d117d4e90",
+        "track_number": 1,
+        "type": "audio_features",
+        "uri": "spotify:track:19YKaevk2bce4odJkP5L22",
+        "danceability": 0.633,
+        "energy": 0.395,
+        "key": 8,
+        "loudness": -9.638,
+        "mode": 1,
+        "speechiness": 0.0857,
+        "acousticness": 0.692,
+        "instrumentalness": 0.000222,
+        "liveness": 0.108,
+        "valence": 0.123,
+        "tempo": 138.023,
+        "track_href": "https://api.spotify.com/v1/tracks/19YKaevk2bce4odJkP5L22",
+        "analysis_url": "https://api.spotify.com/v1/audio-analysis/19YKaevk2bce4odJkP5L22",
+        "time_signature": 4,
+        "popularity": 88,
+        "release_date": "2016-08-20",
+        "images": [
+            {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b273c5649add07ed3720be9d5526",
+                "width": 640
+            },
+            {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e02c5649add07ed3720be9d5526",
+                "width": 300
+            },
+            {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d00004851c5649add07ed3720be9d5526",
+                "width": 64
+            }
+        ],
+        "album": "Blonde"
+    },
+    {
+        "artists": [
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/2h93pZq0e7k5yf4dywlkpM"
+                },
+                "href": "https://api.spotify.com/v1/artists/2h93pZq0e7k5yf4dywlkpM",
+                "id": "2h93pZq0e7k5yf4dywlkpM",
+                "name": "Frank Ocean",
+                "type": "artist",
+                "uri": "spotify:artist:2h93pZq0e7k5yf4dywlkpM"
+            }
+        ],
+        "disc_number": 1,
+        "duration_ms": 249191,
+        "explicit": true,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/track/2ZWlPOoWh0626oTaHrnl2a"
+        },
+        "href": "https://api.spotify.com/v1/tracks/2ZWlPOoWh0626oTaHrnl2a",
+        "id": "2ZWlPOoWh0626oTaHrnl2a",
+        "is_local": false,
+        "name": "Ivy",
+        "preview_url": "https://p.scdn.co/mp3-preview/3eb4d77b749c0f49037e6aee78536eb35b5c88c7?cid=ff6b74c55ca247b4834cfc7d117d4e90",
+        "track_number": 2,
+        "type": "audio_features",
+        "uri": "spotify:track:2ZWlPOoWh0626oTaHrnl2a",
+        "danceability": 0.575,
+        "energy": 0.386,
+        "key": 9,
+        "loudness": -9.584,
+        "mode": 0,
+        "speechiness": 0.037,
+        "acousticness": 0.785,
+        "instrumentalness": 0.000289,
+        "liveness": 0.229,
+        "valence": 0.466,
+        "tempo": 116.408,
+        "track_href": "https://api.spotify.com/v1/tracks/2ZWlPOoWh0626oTaHrnl2a",
+        "analysis_url": "https://api.spotify.com/v1/audio-analysis/2ZWlPOoWh0626oTaHrnl2a",
+        "time_signature": 4,
+        "popularity": 88,
+        "release_date": "2016-08-20",
+        "images": [
+            {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b273c5649add07ed3720be9d5526",
+                "width": 640
+            },
+            {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e02c5649add07ed3720be9d5526",
+                "width": 300
+            },
+            {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d00004851c5649add07ed3720be9d5526",
+                "width": 64
+            }
+        ],
+        "album": "Blonde"
+    },
+    {
+        "artists": [
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/2h93pZq0e7k5yf4dywlkpM"
+                },
+                "href": "https://api.spotify.com/v1/artists/2h93pZq0e7k5yf4dywlkpM",
+                "id": "2h93pZq0e7k5yf4dywlkpM",
+                "name": "Frank Ocean",
+                "type": "artist",
+                "uri": "spotify:artist:2h93pZq0e7k5yf4dywlkpM"
+            }
+        ],
+        "disc_number": 1,
+        "duration_ms": 184516,
+        "explicit": false,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/track/3xKsf9qdS1CyvXSMEid6g8"
+        },
+        "href": "https://api.spotify.com/v1/tracks/3xKsf9qdS1CyvXSMEid6g8",
+        "id": "3xKsf9qdS1CyvXSMEid6g8",
+        "is_local": false,
+        "name": "Pink + White",
+        "preview_url": "https://p.scdn.co/mp3-preview/0e3ca894e19c37cbbbd511d9eb682d8bee030126?cid=ff6b74c55ca247b4834cfc7d117d4e90",
+        "track_number": 3,
+        "type": "audio_features",
+        "uri": "spotify:track:3xKsf9qdS1CyvXSMEid6g8",
+        "danceability": 0.545,
+        "energy": 0.545,
+        "key": 9,
+        "loudness": -7.362,
+        "mode": 1,
+        "speechiness": 0.107,
+        "acousticness": 0.667,
+        "instrumentalness": 5.48e-05,
+        "liveness": 0.417,
+        "valence": 0.549,
+        "tempo": 159.94,
+        "track_href": "https://api.spotify.com/v1/tracks/3xKsf9qdS1CyvXSMEid6g8",
+        "analysis_url": "https://api.spotify.com/v1/audio-analysis/3xKsf9qdS1CyvXSMEid6g8",
+        "time_signature": 3,
+        "popularity": 88,
+        "release_date": "2016-08-20",
+        "images": [
+            {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b273c5649add07ed3720be9d5526",
+                "width": 640
+            },
+            {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e02c5649add07ed3720be9d5526",
+                "width": 300
+            },
+            {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d00004851c5649add07ed3720be9d5526",
+                "width": 64
+            }
+        ],
+        "album": "Blonde"
+    },
+    {
+        "artists": [
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/2h93pZq0e7k5yf4dywlkpM"
+                },
+                "href": "https://api.spotify.com/v1/artists/2h93pZq0e7k5yf4dywlkpM",
+                "id": "2h93pZq0e7k5yf4dywlkpM",
+                "name": "Frank Ocean",
+                "type": "artist",
+                "uri": "spotify:artist:2h93pZq0e7k5yf4dywlkpM"
+            }
+        ],
+        "disc_number": 1,
+        "duration_ms": 86944,
+        "explicit": false,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/track/1IdZvb2XK8NmsovQlV6CPn"
+        },
+        "href": "https://api.spotify.com/v1/tracks/1IdZvb2XK8NmsovQlV6CPn",
+        "id": "1IdZvb2XK8NmsovQlV6CPn",
+        "is_local": false,
+        "name": "Be Yourself",
+        "preview_url": "https://p.scdn.co/mp3-preview/f527bd2a1b2c9a67d409307c10a4c5f2c8a20eb5?cid=ff6b74c55ca247b4834cfc7d117d4e90",
+        "track_number": 4,
+        "type": "audio_features",
+        "uri": "spotify:track:1IdZvb2XK8NmsovQlV6CPn",
+        "danceability": 0.746,
+        "energy": 0.429,
+        "key": 7,
+        "loudness": -11.143,
+        "mode": 1,
+        "speechiness": 0.494,
+        "acousticness": 0.985,
+        "instrumentalness": 0,
+        "liveness": 0.149,
+        "valence": 0.932,
+        "tempo": 88.413,
+        "track_href": "https://api.spotify.com/v1/tracks/1IdZvb2XK8NmsovQlV6CPn",
+        "analysis_url": "https://api.spotify.com/v1/audio-analysis/1IdZvb2XK8NmsovQlV6CPn",
+        "time_signature": 3,
+        "popularity": 88,
+        "release_date": "2016-08-20",
+        "images": [
+            {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b273c5649add07ed3720be9d5526",
+                "width": 640
+            },
+            {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e02c5649add07ed3720be9d5526",
+                "width": 300
+            },
+            {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d00004851c5649add07ed3720be9d5526",
+                "width": 64
+            }
+        ],
+        "album": "Blonde"
+    },
+    {
+        "artists": [
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/2h93pZq0e7k5yf4dywlkpM"
+                },
+                "href": "https://api.spotify.com/v1/artists/2h93pZq0e7k5yf4dywlkpM",
+                "id": "2h93pZq0e7k5yf4dywlkpM",
+                "name": "Frank Ocean",
+                "type": "artist",
+                "uri": "spotify:artist:2h93pZq0e7k5yf4dywlkpM"
+            }
+        ],
+        "disc_number": 1,
+        "duration_ms": 257380,
+        "explicit": true,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/track/35xSkNIXi504fcEwz9USRB"
+        },
+        "href": "https://api.spotify.com/v1/tracks/35xSkNIXi504fcEwz9USRB",
+        "id": "35xSkNIXi504fcEwz9USRB",
+        "is_local": false,
+        "name": "Solo",
+        "preview_url": "https://p.scdn.co/mp3-preview/a29c15d496f95ef1c5fd41a92cbe72b7660d486e?cid=ff6b74c55ca247b4834cfc7d117d4e90",
+        "track_number": 5,
+        "type": "audio_features",
+        "uri": "spotify:track:35xSkNIXi504fcEwz9USRB",
+        "danceability": 0.469,
+        "energy": 0.289,
+        "key": 5,
+        "loudness": -10.625,
+        "mode": 0,
+        "speechiness": 0.0366,
+        "acousticness": 0.85,
+        "instrumentalness": 2.48e-06,
+        "liveness": 0.161,
+        "valence": 0.258,
+        "tempo": 133.805,
+        "track_href": "https://api.spotify.com/v1/tracks/35xSkNIXi504fcEwz9USRB",
+        "analysis_url": "https://api.spotify.com/v1/audio-analysis/35xSkNIXi504fcEwz9USRB",
+        "time_signature": 4,
+        "popularity": 88,
+        "release_date": "2016-08-20",
+        "images": [
+            {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b273c5649add07ed3720be9d5526",
+                "width": 640
+            },
+            {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e02c5649add07ed3720be9d5526",
+                "width": 300
+            },
+            {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d00004851c5649add07ed3720be9d5526",
+                "width": 64
+            }
+        ],
+        "album": "Blonde"
+    },
+    {
+        "artists": [
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/2h93pZq0e7k5yf4dywlkpM"
+                },
+                "href": "https://api.spotify.com/v1/artists/2h93pZq0e7k5yf4dywlkpM",
+                "id": "2h93pZq0e7k5yf4dywlkpM",
+                "name": "Frank Ocean",
+                "type": "artist",
+                "uri": "spotify:artist:2h93pZq0e7k5yf4dywlkpM"
+            }
+        ],
+        "disc_number": 1,
+        "duration_ms": 184600,
+        "explicit": true,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/track/4xR3MAscflQ262kMeiKshQ"
+        },
+        "href": "https://api.spotify.com/v1/tracks/4xR3MAscflQ262kMeiKshQ",
+        "id": "4xR3MAscflQ262kMeiKshQ",
+        "is_local": false,
+        "name": "Skyline To",
+        "preview_url": "https://p.scdn.co/mp3-preview/b09b4d0344038edf2a0b2432a280f1da73227a61?cid=ff6b74c55ca247b4834cfc7d117d4e90",
+        "track_number": 6,
+        "type": "audio_features",
+        "uri": "spotify:track:4xR3MAscflQ262kMeiKshQ",
+        "danceability": 0.43,
+        "energy": 0.296,
+        "key": 3,
+        "loudness": -13.645,
+        "mode": 1,
+        "speechiness": 0.0583,
+        "acousticness": 0.882,
+        "instrumentalness": 6.21e-06,
+        "liveness": 0.104,
+        "valence": 0.386,
+        "tempo": 129.048,
+        "track_href": "https://api.spotify.com/v1/tracks/4xR3MAscflQ262kMeiKshQ",
+        "analysis_url": "https://api.spotify.com/v1/audio-analysis/4xR3MAscflQ262kMeiKshQ",
+        "time_signature": 4,
+        "popularity": 88,
+        "release_date": "2016-08-20",
+        "images": [
+            {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b273c5649add07ed3720be9d5526",
+                "width": 640
+            },
+            {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e02c5649add07ed3720be9d5526",
+                "width": 300
+            },
+            {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d00004851c5649add07ed3720be9d5526",
+                "width": 64
+            }
+        ],
+        "album": "Blonde"
+    },
+    {
+        "artists": [
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/2h93pZq0e7k5yf4dywlkpM"
+                },
+                "href": "https://api.spotify.com/v1/artists/2h93pZq0e7k5yf4dywlkpM",
+                "id": "2h93pZq0e7k5yf4dywlkpM",
+                "name": "Frank Ocean",
+                "type": "artist",
+                "uri": "spotify:artist:2h93pZq0e7k5yf4dywlkpM"
+            }
+        ],
+        "disc_number": 1,
+        "duration_ms": 249668,
+        "explicit": false,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/track/5GUYJTQap5F3RDQiCOJhrS"
+        },
+        "href": "https://api.spotify.com/v1/tracks/5GUYJTQap5F3RDQiCOJhrS",
+        "id": "5GUYJTQap5F3RDQiCOJhrS",
+        "is_local": false,
+        "name": "Self Control",
+        "preview_url": "https://p.scdn.co/mp3-preview/64db1616c8839309c68bafc68e32c45bcb4677c2?cid=ff6b74c55ca247b4834cfc7d117d4e90",
+        "track_number": 7,
+        "type": "audio_features",
+        "uri": "spotify:track:5GUYJTQap5F3RDQiCOJhrS",
+        "danceability": 0.581,
+        "energy": 0.21,
+        "key": 8,
+        "loudness": -10.426,
+        "mode": 1,
+        "speechiness": 0.0321,
+        "acousticness": 0.768,
+        "instrumentalness": 0,
+        "liveness": 0.369,
+        "valence": 0.452,
+        "tempo": 80.099,
+        "track_href": "https://api.spotify.com/v1/tracks/5GUYJTQap5F3RDQiCOJhrS",
+        "analysis_url": "https://api.spotify.com/v1/audio-analysis/5GUYJTQap5F3RDQiCOJhrS",
+        "time_signature": 4,
+        "popularity": 88,
+        "release_date": "2016-08-20",
+        "images": [
+            {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b273c5649add07ed3720be9d5526",
+                "width": 640
+            },
+            {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e02c5649add07ed3720be9d5526",
+                "width": 300
+            },
+            {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d00004851c5649add07ed3720be9d5526",
+                "width": 64
+            }
+        ],
+        "album": "Blonde"
+    },
+    {
+        "artists": [
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/2h93pZq0e7k5yf4dywlkpM"
+                },
+                "href": "https://api.spotify.com/v1/artists/2h93pZq0e7k5yf4dywlkpM",
+                "id": "2h93pZq0e7k5yf4dywlkpM",
+                "name": "Frank Ocean",
+                "type": "artist",
+                "uri": "spotify:artist:2h93pZq0e7k5yf4dywlkpM"
+            }
+        ],
+        "disc_number": 1,
+        "duration_ms": 66786,
+        "explicit": false,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/track/2JUqYobT8NvARdPmc4ES2x"
+        },
+        "href": "https://api.spotify.com/v1/tracks/2JUqYobT8NvARdPmc4ES2x",
+        "id": "2JUqYobT8NvARdPmc4ES2x",
+        "is_local": false,
+        "name": "Good Guy",
+        "preview_url": "https://p.scdn.co/mp3-preview/4998be7f6a05028541e247fd63941b685caa5557?cid=ff6b74c55ca247b4834cfc7d117d4e90",
+        "track_number": 8,
+        "type": "audio_features",
+        "uri": "spotify:track:2JUqYobT8NvARdPmc4ES2x",
+        "danceability": 0.525,
+        "energy": 0.131,
+        "key": 0,
+        "loudness": -12.787,
+        "mode": 1,
+        "speechiness": 0.458,
+        "acousticness": 0.983,
+        "instrumentalness": 0.00433,
+        "liveness": 0.12,
+        "valence": 0.811,
+        "tempo": 107.007,
+        "track_href": "https://api.spotify.com/v1/tracks/2JUqYobT8NvARdPmc4ES2x",
+        "analysis_url": "https://api.spotify.com/v1/audio-analysis/2JUqYobT8NvARdPmc4ES2x",
+        "time_signature": 5,
+        "popularity": 88,
+        "release_date": "2016-08-20",
+        "images": [
+            {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b273c5649add07ed3720be9d5526",
+                "width": 640
+            },
+            {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e02c5649add07ed3720be9d5526",
+                "width": 300
+            },
+            {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d00004851c5649add07ed3720be9d5526",
+                "width": 64
+            }
+        ],
+        "album": "Blonde"
+    },
+    {
+        "artists": [
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/2h93pZq0e7k5yf4dywlkpM"
+                },
+                "href": "https://api.spotify.com/v1/artists/2h93pZq0e7k5yf4dywlkpM",
+                "id": "2h93pZq0e7k5yf4dywlkpM",
+                "name": "Frank Ocean",
+                "type": "artist",
+                "uri": "spotify:artist:2h93pZq0e7k5yf4dywlkpM"
+            }
+        ],
+        "disc_number": 1,
+        "duration_ms": 307151,
+        "explicit": true,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/track/7eqoqGkKwgOaWNNHx90uEZ"
+        },
+        "href": "https://api.spotify.com/v1/tracks/7eqoqGkKwgOaWNNHx90uEZ",
+        "id": "7eqoqGkKwgOaWNNHx90uEZ",
+        "is_local": false,
+        "name": "Nights",
+        "preview_url": "https://p.scdn.co/mp3-preview/478a51ff059dc1abb20548ac2f3d3d73d75c3cb7?cid=ff6b74c55ca247b4834cfc7d117d4e90",
+        "track_number": 9,
+        "type": "audio_features",
+        "uri": "spotify:track:7eqoqGkKwgOaWNNHx90uEZ",
+        "danceability": 0.457,
+        "energy": 0.551,
+        "key": 5,
+        "loudness": -9.36,
+        "mode": 0,
+        "speechiness": 0.167,
+        "acousticness": 0.427,
+        "instrumentalness": 1.15e-06,
+        "liveness": 0.113,
+        "valence": 0.428,
+        "tempo": 89.87,
+        "track_href": "https://api.spotify.com/v1/tracks/7eqoqGkKwgOaWNNHx90uEZ",
+        "analysis_url": "https://api.spotify.com/v1/audio-analysis/7eqoqGkKwgOaWNNHx90uEZ",
+        "time_signature": 4,
+        "popularity": 88,
+        "release_date": "2016-08-20",
+        "images": [
+            {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b273c5649add07ed3720be9d5526",
+                "width": 640
+            },
+            {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e02c5649add07ed3720be9d5526",
+                "width": 300
+            },
+            {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d00004851c5649add07ed3720be9d5526",
+                "width": 64
+            }
+        ],
+        "album": "Blonde"
+    },
+    {
+        "artists": [
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/2h93pZq0e7k5yf4dywlkpM"
+                },
+                "href": "https://api.spotify.com/v1/artists/2h93pZq0e7k5yf4dywlkpM",
+                "id": "2h93pZq0e7k5yf4dywlkpM",
+                "name": "Frank Ocean",
+                "type": "artist",
+                "uri": "spotify:artist:2h93pZq0e7k5yf4dywlkpM"
+            }
+        ],
+        "disc_number": 1,
+        "duration_ms": 78743,
+        "explicit": false,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/track/2qtoRFCOEL1gRn5q9DJC7F"
+        },
+        "href": "https://api.spotify.com/v1/tracks/2qtoRFCOEL1gRn5q9DJC7F",
+        "id": "2qtoRFCOEL1gRn5q9DJC7F",
+        "is_local": false,
+        "name": "Solo (Reprise)",
+        "preview_url": "https://p.scdn.co/mp3-preview/bf9e234268e81af3488d13a335086dbc01046484?cid=ff6b74c55ca247b4834cfc7d117d4e90",
+        "track_number": 10,
+        "type": "audio_features",
+        "uri": "spotify:track:2qtoRFCOEL1gRn5q9DJC7F",
+        "danceability": 0.669,
+        "energy": 0.749,
+        "key": 7,
+        "loudness": -6.811,
+        "mode": 0,
+        "speechiness": 0.141,
+        "acousticness": 0.413,
+        "instrumentalness": 0,
+        "liveness": 0.0848,
+        "valence": 0.608,
+        "tempo": 80.169,
+        "track_href": "https://api.spotify.com/v1/tracks/2qtoRFCOEL1gRn5q9DJC7F",
+        "analysis_url": "https://api.spotify.com/v1/audio-analysis/2qtoRFCOEL1gRn5q9DJC7F",
+        "time_signature": 4,
+        "popularity": 88,
+        "release_date": "2016-08-20",
+        "images": [
+            {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b273c5649add07ed3720be9d5526",
+                "width": 640
+            },
+            {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e02c5649add07ed3720be9d5526",
+                "width": 300
+            },
+            {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d00004851c5649add07ed3720be9d5526",
+                "width": 64
+            }
+        ],
+        "album": "Blonde"
+    },
+    {
+        "artists": [
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/2h93pZq0e7k5yf4dywlkpM"
+                },
+                "href": "https://api.spotify.com/v1/artists/2h93pZq0e7k5yf4dywlkpM",
+                "id": "2h93pZq0e7k5yf4dywlkpM",
+                "name": "Frank Ocean",
+                "type": "artist",
+                "uri": "spotify:artist:2h93pZq0e7k5yf4dywlkpM"
+            }
+        ],
+        "disc_number": 1,
+        "duration_ms": 158478,
+        "explicit": true,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/track/17yrCsl1Ai6CZLBmGj6d6p"
+        },
+        "href": "https://api.spotify.com/v1/tracks/17yrCsl1Ai6CZLBmGj6d6p",
+        "id": "17yrCsl1Ai6CZLBmGj6d6p",
+        "is_local": false,
+        "name": "Pretty Sweet",
+        "preview_url": "https://p.scdn.co/mp3-preview/b23f5a57b2d1b869975531f954c352e6c8d2a41e?cid=ff6b74c55ca247b4834cfc7d117d4e90",
+        "track_number": 11,
+        "type": "audio_features",
+        "uri": "spotify:track:17yrCsl1Ai6CZLBmGj6d6p",
+        "danceability": 0.202,
+        "energy": 0.724,
+        "key": 0,
+        "loudness": -6.742,
+        "mode": 1,
+        "speechiness": 0.0494,
+        "acousticness": 0.258,
+        "instrumentalness": 0.0252,
+        "liveness": 0.296,
+        "valence": 0.165,
+        "tempo": 154.037,
+        "track_href": "https://api.spotify.com/v1/tracks/17yrCsl1Ai6CZLBmGj6d6p",
+        "analysis_url": "https://api.spotify.com/v1/audio-analysis/17yrCsl1Ai6CZLBmGj6d6p",
+        "time_signature": 4,
+        "popularity": 88,
+        "release_date": "2016-08-20",
+        "images": [
+            {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b273c5649add07ed3720be9d5526",
+                "width": 640
+            },
+            {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e02c5649add07ed3720be9d5526",
+                "width": 300
+            },
+            {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d00004851c5649add07ed3720be9d5526",
+                "width": 64
+            }
+        ],
+        "album": "Blonde"
+    },
+    {
+        "artists": [
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/2h93pZq0e7k5yf4dywlkpM"
+                },
+                "href": "https://api.spotify.com/v1/artists/2h93pZq0e7k5yf4dywlkpM",
+                "id": "2h93pZq0e7k5yf4dywlkpM",
+                "name": "Frank Ocean",
+                "type": "artist",
+                "uri": "spotify:artist:2h93pZq0e7k5yf4dywlkpM"
+            }
+        ],
+        "disc_number": 1,
+        "duration_ms": 68588,
+        "explicit": false,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/track/73D5hBkiVZkopZrmBZTBWf"
+        },
+        "href": "https://api.spotify.com/v1/tracks/73D5hBkiVZkopZrmBZTBWf",
+        "id": "73D5hBkiVZkopZrmBZTBWf",
+        "is_local": false,
+        "name": "Facebook Story",
+        "preview_url": "https://p.scdn.co/mp3-preview/197095ac5645dd077aa97aa3b0dd4fcf22c014fd?cid=ff6b74c55ca247b4834cfc7d117d4e90",
+        "track_number": 12,
+        "type": "audio_features",
+        "uri": "spotify:track:73D5hBkiVZkopZrmBZTBWf",
+        "danceability": 0.526,
+        "energy": 0.179,
+        "key": 0,
+        "loudness": -20.55,
+        "mode": 1,
+        "speechiness": 0.692,
+        "acousticness": 0.873,
+        "instrumentalness": 0,
+        "liveness": 0.248,
+        "valence": 0.698,
+        "tempo": 81.993,
+        "track_href": "https://api.spotify.com/v1/tracks/73D5hBkiVZkopZrmBZTBWf",
+        "analysis_url": "https://api.spotify.com/v1/audio-analysis/73D5hBkiVZkopZrmBZTBWf",
+        "time_signature": 3,
+        "popularity": 88,
+        "release_date": "2016-08-20",
+        "images": [
+            {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b273c5649add07ed3720be9d5526",
+                "width": 640
+            },
+            {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e02c5649add07ed3720be9d5526",
+                "width": 300
+            },
+            {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d00004851c5649add07ed3720be9d5526",
+                "width": 64
+            }
+        ],
+        "album": "Blonde"
+    },
+    {
+        "artists": [
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/2h93pZq0e7k5yf4dywlkpM"
+                },
+                "href": "https://api.spotify.com/v1/artists/2h93pZq0e7k5yf4dywlkpM",
+                "id": "2h93pZq0e7k5yf4dywlkpM",
+                "name": "Frank Ocean",
+                "type": "artist",
+                "uri": "spotify:artist:2h93pZq0e7k5yf4dywlkpM"
+            }
+        ],
+        "disc_number": 1,
+        "duration_ms": 85754,
+        "explicit": false,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/track/1VZLEW5ZfcAbKZ94XQiSZF"
+        },
+        "href": "https://api.spotify.com/v1/tracks/1VZLEW5ZfcAbKZ94XQiSZF",
+        "id": "1VZLEW5ZfcAbKZ94XQiSZF",
+        "is_local": false,
+        "name": "Close To You",
+        "preview_url": "https://p.scdn.co/mp3-preview/801ebf31d7cc01a461e0313842c13b9da262832f?cid=ff6b74c55ca247b4834cfc7d117d4e90",
+        "track_number": 13,
+        "type": "audio_features",
+        "uri": "spotify:track:1VZLEW5ZfcAbKZ94XQiSZF",
+        "danceability": 0.855,
+        "energy": 0.663,
+        "key": 5,
+        "loudness": -8.401,
+        "mode": 0,
+        "speechiness": 0.2,
+        "acousticness": 0.194,
+        "instrumentalness": 0.0013,
+        "liveness": 0.146,
+        "valence": 0.815,
+        "tempo": 77.978,
+        "track_href": "https://api.spotify.com/v1/tracks/1VZLEW5ZfcAbKZ94XQiSZF",
+        "analysis_url": "https://api.spotify.com/v1/audio-analysis/1VZLEW5ZfcAbKZ94XQiSZF",
+        "time_signature": 4,
+        "popularity": 88,
+        "release_date": "2016-08-20",
+        "images": [
+            {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b273c5649add07ed3720be9d5526",
+                "width": 640
+            },
+            {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e02c5649add07ed3720be9d5526",
+                "width": 300
+            },
+            {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d00004851c5649add07ed3720be9d5526",
+                "width": 64
+            }
+        ],
+        "album": "Blonde"
+    },
+    {
+        "artists": [
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/2h93pZq0e7k5yf4dywlkpM"
+                },
+                "href": "https://api.spotify.com/v1/artists/2h93pZq0e7k5yf4dywlkpM",
+                "id": "2h93pZq0e7k5yf4dywlkpM",
+                "name": "Frank Ocean",
+                "type": "artist",
+                "uri": "spotify:artist:2h93pZq0e7k5yf4dywlkpM"
+            }
+        ],
+        "disc_number": 1,
+        "duration_ms": 248808,
+        "explicit": false,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/track/2LMkwUfqC6S6s6qDVlEuzV"
+        },
+        "href": "https://api.spotify.com/v1/tracks/2LMkwUfqC6S6s6qDVlEuzV",
+        "id": "2LMkwUfqC6S6s6qDVlEuzV",
+        "is_local": false,
+        "name": "White Ferrari",
+        "preview_url": "https://p.scdn.co/mp3-preview/bff77236970b7f90cdfc274b18b55ce7bf584bcc?cid=ff6b74c55ca247b4834cfc7d117d4e90",
+        "track_number": 14,
+        "type": "audio_features",
+        "uri": "spotify:track:2LMkwUfqC6S6s6qDVlEuzV",
+        "danceability": 0.501,
+        "energy": 0.0958,
+        "key": 0,
+        "loudness": -15.605,
+        "mode": 1,
+        "speechiness": 0.0433,
+        "acousticness": 0.77,
+        "instrumentalness": 0,
+        "liveness": 0.298,
+        "valence": 0.204,
+        "tempo": 108.741,
+        "track_href": "https://api.spotify.com/v1/tracks/2LMkwUfqC6S6s6qDVlEuzV",
+        "analysis_url": "https://api.spotify.com/v1/audio-analysis/2LMkwUfqC6S6s6qDVlEuzV",
+        "time_signature": 4,
+        "popularity": 88,
+        "release_date": "2016-08-20",
+        "images": [
+            {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b273c5649add07ed3720be9d5526",
+                "width": 640
+            },
+            {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e02c5649add07ed3720be9d5526",
+                "width": 300
+            },
+            {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d00004851c5649add07ed3720be9d5526",
+                "width": 64
+            }
+        ],
+        "album": "Blonde"
+    },
+    {
+        "artists": [
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/2h93pZq0e7k5yf4dywlkpM"
+                },
+                "href": "https://api.spotify.com/v1/artists/2h93pZq0e7k5yf4dywlkpM",
+                "id": "2h93pZq0e7k5yf4dywlkpM",
+                "name": "Frank Ocean",
+                "type": "artist",
+                "uri": "spotify:artist:2h93pZq0e7k5yf4dywlkpM"
+            }
+        ],
+        "disc_number": 1,
+        "duration_ms": 334570,
+        "explicit": false,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/track/1BViPjTT585XAhkUUrkts0"
+        },
+        "href": "https://api.spotify.com/v1/tracks/1BViPjTT585XAhkUUrkts0",
+        "id": "1BViPjTT585XAhkUUrkts0",
+        "is_local": false,
+        "name": "Seigfried",
+        "preview_url": "https://p.scdn.co/mp3-preview/a96e5789373ae4ca0e61ade983d6acc3deab7513?cid=ff6b74c55ca247b4834cfc7d117d4e90",
+        "track_number": 15,
+        "type": "audio_features",
+        "uri": "spotify:track:1BViPjTT585XAhkUUrkts0",
+        "danceability": 0.377,
+        "energy": 0.253,
+        "key": 4,
+        "loudness": -11.155,
+        "mode": 0,
+        "speechiness": 0.0387,
+        "acousticness": 0.975,
+        "instrumentalness": 0.000259,
+        "liveness": 0.101,
+        "valence": 0.367,
+        "tempo": 125.403,
+        "track_href": "https://api.spotify.com/v1/tracks/1BViPjTT585XAhkUUrkts0",
+        "analysis_url": "https://api.spotify.com/v1/audio-analysis/1BViPjTT585XAhkUUrkts0",
+        "time_signature": 3,
+        "popularity": 88,
+        "release_date": "2016-08-20",
+        "images": [
+            {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b273c5649add07ed3720be9d5526",
+                "width": 640
+            },
+            {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e02c5649add07ed3720be9d5526",
+                "width": 300
+            },
+            {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d00004851c5649add07ed3720be9d5526",
+                "width": 64
+            }
+        ],
+        "album": "Blonde"
+    },
+    {
+        "artists": [
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/2h93pZq0e7k5yf4dywlkpM"
+                },
+                "href": "https://api.spotify.com/v1/artists/2h93pZq0e7k5yf4dywlkpM",
+                "id": "2h93pZq0e7k5yf4dywlkpM",
+                "name": "Frank Ocean",
+                "type": "artist",
+                "uri": "spotify:artist:2h93pZq0e7k5yf4dywlkpM"
+            }
+        ],
+        "disc_number": 1,
+        "duration_ms": 177922,
+        "explicit": false,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/track/34xTFwjPQ1dC6uJmleno7x"
+        },
+        "href": "https://api.spotify.com/v1/tracks/34xTFwjPQ1dC6uJmleno7x",
+        "id": "34xTFwjPQ1dC6uJmleno7x",
+        "is_local": false,
+        "name": "Godspeed",
+        "preview_url": "https://p.scdn.co/mp3-preview/9a87fcae1c0166a31f78997b87e8d5c28747734f?cid=ff6b74c55ca247b4834cfc7d117d4e90",
+        "track_number": 16,
+        "type": "audio_features",
+        "uri": "spotify:track:34xTFwjPQ1dC6uJmleno7x",
+        "danceability": 0.399,
+        "energy": 0.0969,
+        "key": 6,
+        "loudness": -12.578,
+        "mode": 1,
+        "speechiness": 0.0509,
+        "acousticness": 0.929,
+        "instrumentalness": 0.000168,
+        "liveness": 0.121,
+        "valence": 0.0758,
+        "tempo": 109.54,
+        "track_href": "https://api.spotify.com/v1/tracks/34xTFwjPQ1dC6uJmleno7x",
+        "analysis_url": "https://api.spotify.com/v1/audio-analysis/34xTFwjPQ1dC6uJmleno7x",
+        "time_signature": 4,
+        "popularity": 88,
+        "release_date": "2016-08-20",
+        "images": [
+            {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b273c5649add07ed3720be9d5526",
+                "width": 640
+            },
+            {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e02c5649add07ed3720be9d5526",
+                "width": 300
+            },
+            {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d00004851c5649add07ed3720be9d5526",
+                "width": 64
+            }
+        ],
+        "album": "Blonde"
+    },
+    {
+        "artists": [
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/2h93pZq0e7k5yf4dywlkpM"
+                },
+                "href": "https://api.spotify.com/v1/artists/2h93pZq0e7k5yf4dywlkpM",
+                "id": "2h93pZq0e7k5yf4dywlkpM",
+                "name": "Frank Ocean",
+                "type": "artist",
+                "uri": "spotify:artist:2h93pZq0e7k5yf4dywlkpM"
+            }
+        ],
+        "disc_number": 1,
+        "duration_ms": 564166,
+        "explicit": true,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/track/5k8LB57xOq8UUNVaKWSqrf"
+        },
+        "href": "https://api.spotify.com/v1/tracks/5k8LB57xOq8UUNVaKWSqrf",
+        "id": "5k8LB57xOq8UUNVaKWSqrf",
+        "is_local": false,
+        "name": "Futura Free",
+        "preview_url": "https://p.scdn.co/mp3-preview/1d40e042a841dfd5ddd3e3be48e4730c893e3139?cid=ff6b74c55ca247b4834cfc7d117d4e90",
+        "track_number": 17,
+        "type": "audio_features",
+        "uri": "spotify:track:5k8LB57xOq8UUNVaKWSqrf",
+        "danceability": 0.266,
+        "energy": 0.678,
+        "key": 1,
+        "loudness": -12.364,
+        "mode": 1,
+        "speechiness": 0.508,
+        "acousticness": 0.769,
+        "instrumentalness": 9.37e-05,
+        "liveness": 0.503,
+        "valence": 0.201,
+        "tempo": 83.434,
+        "track_href": "https://api.spotify.com/v1/tracks/5k8LB57xOq8UUNVaKWSqrf",
+        "analysis_url": "https://api.spotify.com/v1/audio-analysis/5k8LB57xOq8UUNVaKWSqrf",
+        "time_signature": 4,
+        "popularity": 88,
+        "release_date": "2016-08-20",
+        "images": [
+            {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b273c5649add07ed3720be9d5526",
+                "width": 640
+            },
+            {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e02c5649add07ed3720be9d5526",
+                "width": 300
+            },
+            {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d00004851c5649add07ed3720be9d5526",
+                "width": 64
+            }
+        ],
+        "album": "Blonde"
+    },
+    {
+        "artists": [
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/2h93pZq0e7k5yf4dywlkpM"
+                },
+                "href": "https://api.spotify.com/v1/artists/2h93pZq0e7k5yf4dywlkpM",
+                "id": "2h93pZq0e7k5yf4dywlkpM",
+                "name": "Frank Ocean",
+                "type": "artist",
+                "uri": "spotify:artist:2h93pZq0e7k5yf4dywlkpM"
+            }
+        ],
+        "disc_number": 1,
+        "duration_ms": 45640,
+        "explicit": false,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/track/0GAE689kVy7sFT2QWZH1Xa"
+        },
+        "href": "https://api.spotify.com/v1/tracks/0GAE689kVy7sFT2QWZH1Xa",
+        "id": "0GAE689kVy7sFT2QWZH1Xa",
+        "is_local": false,
+        "name": "Start",
+        "preview_url": null,
+        "track_number": 1,
+        "type": "audio_features",
+        "uri": "spotify:track:0GAE689kVy7sFT2QWZH1Xa",
+        "danceability": 0.347,
+        "energy": 0.33,
+        "key": 7,
+        "loudness": -19.761,
+        "mode": 1,
+        "speechiness": 0.149,
+        "acousticness": 0.74,
+        "instrumentalness": 0.931,
+        "liveness": 0.557,
+        "valence": 0.0316,
+        "tempo": 82.85,
+        "track_href": "https://api.spotify.com/v1/tracks/0GAE689kVy7sFT2QWZH1Xa",
+        "analysis_url": "https://api.spotify.com/v1/audio-analysis/0GAE689kVy7sFT2QWZH1Xa",
+        "time_signature": 5,
+        "popularity": 85,
+        "release_date": "2012-07-10",
+        "images": [
+            {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b2737aede4855f6d0d738012e2e5",
+                "width": 640
+            },
+            {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e027aede4855f6d0d738012e2e5",
+                "width": 300
+            },
+            {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d000048517aede4855f6d0d738012e2e5",
+                "width": 64
+            }
+        ],
+        "album": "channel ORANGE"
+    },
+    {
+        "artists": [
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/2h93pZq0e7k5yf4dywlkpM"
+                },
+                "href": "https://api.spotify.com/v1/artists/2h93pZq0e7k5yf4dywlkpM",
+                "id": "2h93pZq0e7k5yf4dywlkpM",
+                "name": "Frank Ocean",
+                "type": "artist",
+                "uri": "spotify:artist:2h93pZq0e7k5yf4dywlkpM"
+            }
+        ],
+        "disc_number": 1,
+        "duration_ms": 200747,
+        "explicit": false,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/track/7DfFc7a6Rwfi3YQMRbDMau"
+        },
+        "href": "https://api.spotify.com/v1/tracks/7DfFc7a6Rwfi3YQMRbDMau",
+        "id": "7DfFc7a6Rwfi3YQMRbDMau",
+        "is_local": false,
+        "name": "Thinkin Bout You",
+        "preview_url": null,
+        "track_number": 2,
+        "type": "audio_features",
+        "uri": "spotify:track:7DfFc7a6Rwfi3YQMRbDMau",
+        "danceability": 0.721,
+        "energy": 0.339,
+        "key": 0,
+        "loudness": -11.195,
+        "mode": 1,
+        "speechiness": 0.0532,
+        "acousticness": 0.409,
+        "instrumentalness": 0.00153,
+        "liveness": 0.0973,
+        "valence": 0.2,
+        "tempo": 129.83,
+        "track_href": "https://api.spotify.com/v1/tracks/7DfFc7a6Rwfi3YQMRbDMau",
+        "analysis_url": "https://api.spotify.com/v1/audio-analysis/7DfFc7a6Rwfi3YQMRbDMau",
+        "time_signature": 4,
+        "popularity": 85,
+        "release_date": "2012-07-10",
+        "images": [
+            {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b2737aede4855f6d0d738012e2e5",
+                "width": 640
+            },
+            {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e027aede4855f6d0d738012e2e5",
+                "width": 300
+            },
+            {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d000048517aede4855f6d0d738012e2e5",
+                "width": 64
+            }
+        ],
+        "album": "channel ORANGE"
+    },
+    {
+        "artists": [
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/2h93pZq0e7k5yf4dywlkpM"
+                },
+                "href": "https://api.spotify.com/v1/artists/2h93pZq0e7k5yf4dywlkpM",
+                "id": "2h93pZq0e7k5yf4dywlkpM",
+                "name": "Frank Ocean",
+                "type": "artist",
+                "uri": "spotify:artist:2h93pZq0e7k5yf4dywlkpM"
+            }
+        ],
+        "disc_number": 1,
+        "duration_ms": 39640,
+        "explicit": true,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/track/6jypaMkKsoc5npsVzxhksl"
+        },
+        "href": "https://api.spotify.com/v1/tracks/6jypaMkKsoc5npsVzxhksl",
+        "id": "6jypaMkKsoc5npsVzxhksl",
+        "is_local": false,
+        "name": "Fertilizer",
+        "preview_url": null,
+        "track_number": 3,
+        "type": "audio_features",
+        "uri": "spotify:track:6jypaMkKsoc5npsVzxhksl",
+        "danceability": 0.706,
+        "energy": 0.57,
+        "key": 11,
+        "loudness": -7.129,
+        "mode": 1,
+        "speechiness": 0.0841,
+        "acousticness": 0.689,
+        "instrumentalness": 0.0698,
+        "liveness": 0.288,
+        "valence": 0.96,
+        "tempo": 115.864,
+        "track_href": "https://api.spotify.com/v1/tracks/6jypaMkKsoc5npsVzxhksl",
+        "analysis_url": "https://api.spotify.com/v1/audio-analysis/6jypaMkKsoc5npsVzxhksl",
+        "time_signature": 4,
+        "popularity": 85,
+        "release_date": "2012-07-10",
+        "images": [
+            {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b2737aede4855f6d0d738012e2e5",
+                "width": 640
+            },
+            {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e027aede4855f6d0d738012e2e5",
+                "width": 300
+            },
+            {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d000048517aede4855f6d0d738012e2e5",
+                "width": 64
+            }
+        ],
+        "album": "channel ORANGE"
+    },
+    {
+        "artists": [
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/2h93pZq0e7k5yf4dywlkpM"
+                },
+                "href": "https://api.spotify.com/v1/artists/2h93pZq0e7k5yf4dywlkpM",
+                "id": "2h93pZq0e7k5yf4dywlkpM",
+                "name": "Frank Ocean",
+                "type": "artist",
+                "uri": "spotify:artist:2h93pZq0e7k5yf4dywlkpM"
+            }
+        ],
+        "disc_number": 1,
+        "duration_ms": 148760,
+        "explicit": true,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/track/1HwbgJAU9PZ7YbzKgVgoIF"
+        },
+        "href": "https://api.spotify.com/v1/tracks/1HwbgJAU9PZ7YbzKgVgoIF",
+        "id": "1HwbgJAU9PZ7YbzKgVgoIF",
+        "is_local": false,
+        "name": "Sierra Leone",
+        "preview_url": null,
+        "track_number": 4,
+        "type": "audio_features",
+        "uri": "spotify:track:1HwbgJAU9PZ7YbzKgVgoIF",
+        "danceability": 0.529,
+        "energy": 0.608,
+        "key": 7,
+        "loudness": -7.809,
+        "mode": 1,
+        "speechiness": 0.0811,
+        "acousticness": 0.166,
+        "instrumentalness": 0.0185,
+        "liveness": 0.109,
+        "valence": 0.616,
+        "tempo": 125.017,
+        "track_href": "https://api.spotify.com/v1/tracks/1HwbgJAU9PZ7YbzKgVgoIF",
+        "analysis_url": "https://api.spotify.com/v1/audio-analysis/1HwbgJAU9PZ7YbzKgVgoIF",
+        "time_signature": 4,
+        "popularity": 85,
+        "release_date": "2012-07-10",
+        "images": [
+            {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b2737aede4855f6d0d738012e2e5",
+                "width": 640
+            },
+            {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e027aede4855f6d0d738012e2e5",
+                "width": 300
+            },
+            {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d000048517aede4855f6d0d738012e2e5",
+                "width": 64
+            }
+        ],
+        "album": "channel ORANGE"
+    },
+    {
+        "artists": [
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/2h93pZq0e7k5yf4dywlkpM"
+                },
+                "href": "https://api.spotify.com/v1/artists/2h93pZq0e7k5yf4dywlkpM",
+                "id": "2h93pZq0e7k5yf4dywlkpM",
+                "name": "Frank Ocean",
+                "type": "artist",
+                "uri": "spotify:artist:2h93pZq0e7k5yf4dywlkpM"
+            }
+        ],
+        "disc_number": 1,
+        "duration_ms": 262680,
+        "explicit": true,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/track/6MEDfjHxnVNcYmHe3mM6L2"
+        },
+        "href": "https://api.spotify.com/v1/tracks/6MEDfjHxnVNcYmHe3mM6L2",
+        "id": "6MEDfjHxnVNcYmHe3mM6L2",
+        "is_local": false,
+        "name": "Sweet Life",
+        "preview_url": null,
+        "track_number": 5,
+        "type": "audio_features",
+        "uri": "spotify:track:6MEDfjHxnVNcYmHe3mM6L2",
+        "danceability": 0.479,
+        "energy": 0.558,
+        "key": 11,
+        "loudness": -6.074,
+        "mode": 1,
+        "speechiness": 0.179,
+        "acousticness": 0.227,
+        "instrumentalness": 0,
+        "liveness": 0.0808,
+        "valence": 0.8,
+        "tempo": 83.465,
+        "track_href": "https://api.spotify.com/v1/tracks/6MEDfjHxnVNcYmHe3mM6L2",
+        "analysis_url": "https://api.spotify.com/v1/audio-analysis/6MEDfjHxnVNcYmHe3mM6L2",
+        "time_signature": 4,
+        "popularity": 85,
+        "release_date": "2012-07-10",
+        "images": [
+            {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b2737aede4855f6d0d738012e2e5",
+                "width": 640
+            },
+            {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e027aede4855f6d0d738012e2e5",
+                "width": 300
+            },
+            {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d000048517aede4855f6d0d738012e2e5",
+                "width": 64
+            }
+        ],
+        "album": "channel ORANGE"
+    },
+    {
+        "artists": [
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/2h93pZq0e7k5yf4dywlkpM"
+                },
+                "href": "https://api.spotify.com/v1/artists/2h93pZq0e7k5yf4dywlkpM",
+                "id": "2h93pZq0e7k5yf4dywlkpM",
+                "name": "Frank Ocean",
+                "type": "artist",
+                "uri": "spotify:artist:2h93pZq0e7k5yf4dywlkpM"
+            }
+        ],
+        "disc_number": 1,
+        "duration_ms": 59760,
+        "explicit": false,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/track/3iW3y326xuRpNVXzOMBZy5"
+        },
+        "href": "https://api.spotify.com/v1/tracks/3iW3y326xuRpNVXzOMBZy5",
+        "id": "3iW3y326xuRpNVXzOMBZy5",
+        "is_local": false,
+        "name": "Not Just Money",
+        "preview_url": null,
+        "track_number": 6,
+        "type": "audio_features",
+        "uri": "spotify:track:3iW3y326xuRpNVXzOMBZy5",
+        "danceability": 0.357,
+        "energy": 0.827,
+        "key": 11,
+        "loudness": -15.868,
+        "mode": 0,
+        "speechiness": 0.444,
+        "acousticness": 0.775,
+        "instrumentalness": 0.0213,
+        "liveness": 0.493,
+        "valence": 0.103,
+        "tempo": 152.13,
+        "track_href": "https://api.spotify.com/v1/tracks/3iW3y326xuRpNVXzOMBZy5",
+        "analysis_url": "https://api.spotify.com/v1/audio-analysis/3iW3y326xuRpNVXzOMBZy5",
+        "time_signature": 1,
+        "popularity": 85,
+        "release_date": "2012-07-10",
+        "images": [
+            {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b2737aede4855f6d0d738012e2e5",
+                "width": 640
+            },
+            {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e027aede4855f6d0d738012e2e5",
+                "width": 300
+            },
+            {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d000048517aede4855f6d0d738012e2e5",
+                "width": 64
+            }
+        ],
+        "album": "channel ORANGE"
+    },
+    {
+        "artists": [
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/2h93pZq0e7k5yf4dywlkpM"
+                },
+                "href": "https://api.spotify.com/v1/artists/2h93pZq0e7k5yf4dywlkpM",
+                "id": "2h93pZq0e7k5yf4dywlkpM",
+                "name": "Frank Ocean",
+                "type": "artist",
+                "uri": "spotify:artist:2h93pZq0e7k5yf4dywlkpM"
+            },
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/3A5tHz1SfngyOZM2gItYKu"
+                },
+                "href": "https://api.spotify.com/v1/artists/3A5tHz1SfngyOZM2gItYKu",
+                "id": "3A5tHz1SfngyOZM2gItYKu",
+                "name": "Earl Sweatshirt",
+                "type": "artist",
+                "uri": "spotify:artist:3A5tHz1SfngyOZM2gItYKu"
+            }
+        ],
+        "disc_number": 1,
+        "duration_ms": 304760,
+        "explicit": true,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/track/0725YWm6Z0TpZ6wrNk64Eb"
+        },
+        "href": "https://api.spotify.com/v1/tracks/0725YWm6Z0TpZ6wrNk64Eb",
+        "id": "0725YWm6Z0TpZ6wrNk64Eb",
+        "is_local": false,
+        "name": "Super Rich Kids",
+        "preview_url": null,
+        "track_number": 7,
+        "type": "audio_features",
+        "uri": "spotify:track:0725YWm6Z0TpZ6wrNk64Eb",
+        "danceability": 0.739,
+        "energy": 0.419,
+        "key": 3,
+        "loudness": -8.241,
+        "mode": 0,
+        "speechiness": 0.0854,
+        "acousticness": 0.219,
+        "instrumentalness": 0,
+        "liveness": 0.196,
+        "valence": 0.58,
+        "tempo": 60.493,
+        "track_href": "https://api.spotify.com/v1/tracks/0725YWm6Z0TpZ6wrNk64Eb",
+        "analysis_url": "https://api.spotify.com/v1/audio-analysis/0725YWm6Z0TpZ6wrNk64Eb",
+        "time_signature": 4,
+        "popularity": 85,
+        "release_date": "2012-07-10",
+        "images": [
+            {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b2737aede4855f6d0d738012e2e5",
+                "width": 640
+            },
+            {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e027aede4855f6d0d738012e2e5",
+                "width": 300
+            },
+            {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d000048517aede4855f6d0d738012e2e5",
+                "width": 64
+            }
+        ],
+        "album": "channel ORANGE"
+    },
+    {
+        "artists": [
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/2h93pZq0e7k5yf4dywlkpM"
+                },
+                "href": "https://api.spotify.com/v1/artists/2h93pZq0e7k5yf4dywlkpM",
+                "id": "2h93pZq0e7k5yf4dywlkpM",
+                "name": "Frank Ocean",
+                "type": "artist",
+                "uri": "spotify:artist:2h93pZq0e7k5yf4dywlkpM"
+            }
+        ],
+        "disc_number": 1,
+        "duration_ms": 184080,
+        "explicit": false,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/track/2ohegz9maxzroKBu9YhcCM"
+        },
+        "href": "https://api.spotify.com/v1/tracks/2ohegz9maxzroKBu9YhcCM",
+        "id": "2ohegz9maxzroKBu9YhcCM",
+        "is_local": false,
+        "name": "Pilot Jones",
+        "preview_url": null,
+        "track_number": 8,
+        "type": "audio_features",
+        "uri": "spotify:track:2ohegz9maxzroKBu9YhcCM",
+        "danceability": 0.394,
+        "energy": 0.433,
+        "key": 8,
+        "loudness": -13.473,
+        "mode": 1,
+        "speechiness": 0.374,
+        "acousticness": 0.485,
+        "instrumentalness": 7.81e-05,
+        "liveness": 0.817,
+        "valence": 0.394,
+        "tempo": 118.988,
+        "track_href": "https://api.spotify.com/v1/tracks/2ohegz9maxzroKBu9YhcCM",
+        "analysis_url": "https://api.spotify.com/v1/audio-analysis/2ohegz9maxzroKBu9YhcCM",
+        "time_signature": 1,
+        "popularity": 85,
+        "release_date": "2012-07-10",
+        "images": [
+            {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b2737aede4855f6d0d738012e2e5",
+                "width": 640
+            },
+            {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e027aede4855f6d0d738012e2e5",
+                "width": 300
+            },
+            {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d000048517aede4855f6d0d738012e2e5",
+                "width": 64
+            }
+        ],
+        "album": "channel ORANGE"
+    },
+    {
+        "artists": [
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/2h93pZq0e7k5yf4dywlkpM"
+                },
+                "href": "https://api.spotify.com/v1/artists/2h93pZq0e7k5yf4dywlkpM",
+                "id": "2h93pZq0e7k5yf4dywlkpM",
+                "name": "Frank Ocean",
+                "type": "artist",
+                "uri": "spotify:artist:2h93pZq0e7k5yf4dywlkpM"
+            }
+        ],
+        "disc_number": 1,
+        "duration_ms": 224147,
+        "explicit": true,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/track/5lcyIeEfwZTs8Ajw3kdF7P"
+        },
+        "href": "https://api.spotify.com/v1/tracks/5lcyIeEfwZTs8Ajw3kdF7P",
+        "id": "5lcyIeEfwZTs8Ajw3kdF7P",
+        "is_local": false,
+        "name": "Crack Rock",
+        "preview_url": null,
+        "track_number": 9,
+        "type": "audio_features",
+        "uri": "spotify:track:5lcyIeEfwZTs8Ajw3kdF7P",
+        "danceability": 0.429,
+        "energy": 0.736,
+        "key": 5,
+        "loudness": -8.017,
+        "mode": 1,
+        "speechiness": 0.222,
+        "acousticness": 0.0696,
+        "instrumentalness": 0,
+        "liveness": 0.0852,
+        "valence": 0.379,
+        "tempo": 89.262,
+        "track_href": "https://api.spotify.com/v1/tracks/5lcyIeEfwZTs8Ajw3kdF7P",
+        "analysis_url": "https://api.spotify.com/v1/audio-analysis/5lcyIeEfwZTs8Ajw3kdF7P",
+        "time_signature": 4,
+        "popularity": 85,
+        "release_date": "2012-07-10",
+        "images": [
+            {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b2737aede4855f6d0d738012e2e5",
+                "width": 640
+            },
+            {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e027aede4855f6d0d738012e2e5",
+                "width": 300
+            },
+            {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d000048517aede4855f6d0d738012e2e5",
+                "width": 64
+            }
+        ],
+        "album": "channel ORANGE"
+    },
+    {
+        "artists": [
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/2h93pZq0e7k5yf4dywlkpM"
+                },
+                "href": "https://api.spotify.com/v1/artists/2h93pZq0e7k5yf4dywlkpM",
+                "id": "2h93pZq0e7k5yf4dywlkpM",
+                "name": "Frank Ocean",
+                "type": "artist",
+                "uri": "spotify:artist:2h93pZq0e7k5yf4dywlkpM"
+            }
+        ],
+        "disc_number": 1,
+        "duration_ms": 592920,
+        "explicit": true,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/track/4QhWbupniDd44EDtnh2bFJ"
+        },
+        "href": "https://api.spotify.com/v1/tracks/4QhWbupniDd44EDtnh2bFJ",
+        "id": "4QhWbupniDd44EDtnh2bFJ",
+        "is_local": false,
+        "name": "Pyramids",
+        "preview_url": null,
+        "track_number": 10,
+        "type": "audio_features",
+        "uri": "spotify:track:4QhWbupniDd44EDtnh2bFJ",
+        "danceability": 0.4,
+        "energy": 0.65,
+        "key": 5,
+        "loudness": -6.104,
+        "mode": 0,
+        "speechiness": 0.0466,
+        "acousticness": 0.0118,
+        "instrumentalness": 7.62e-05,
+        "liveness": 0.791,
+        "valence": 0.15,
+        "tempo": 107.989,
+        "track_href": "https://api.spotify.com/v1/tracks/4QhWbupniDd44EDtnh2bFJ",
+        "analysis_url": "https://api.spotify.com/v1/audio-analysis/4QhWbupniDd44EDtnh2bFJ",
+        "time_signature": 4,
+        "popularity": 85,
+        "release_date": "2012-07-10",
+        "images": [
+            {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b2737aede4855f6d0d738012e2e5",
+                "width": 640
+            },
+            {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e027aede4855f6d0d738012e2e5",
+                "width": 300
+            },
+            {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d000048517aede4855f6d0d738012e2e5",
+                "width": 64
+            }
+        ],
+        "album": "channel ORANGE"
+    },
+    {
+        "artists": [
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/2h93pZq0e7k5yf4dywlkpM"
+                },
+                "href": "https://api.spotify.com/v1/artists/2h93pZq0e7k5yf4dywlkpM",
+                "id": "2h93pZq0e7k5yf4dywlkpM",
+                "name": "Frank Ocean",
+                "type": "artist",
+                "uri": "spotify:artist:2h93pZq0e7k5yf4dywlkpM"
+            }
+        ],
+        "disc_number": 1,
+        "duration_ms": 234093,
+        "explicit": true,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/track/3GZD6HmiNUhxXYf8Gch723"
+        },
+        "href": "https://api.spotify.com/v1/tracks/3GZD6HmiNUhxXYf8Gch723",
+        "id": "3GZD6HmiNUhxXYf8Gch723",
+        "is_local": false,
+        "name": "Lost",
+        "preview_url": null,
+        "track_number": 11,
+        "type": "audio_features",
+        "uri": "spotify:track:3GZD6HmiNUhxXYf8Gch723",
+        "danceability": 0.913,
+        "energy": 0.603,
+        "key": 8,
+        "loudness": -4.892,
+        "mode": 1,
+        "speechiness": 0.226,
+        "acousticness": 0.0272,
+        "instrumentalness": 0.000503,
+        "liveness": 0.167,
+        "valence": 0.497,
+        "tempo": 123.061,
+        "track_href": "https://api.spotify.com/v1/tracks/3GZD6HmiNUhxXYf8Gch723",
+        "analysis_url": "https://api.spotify.com/v1/audio-analysis/3GZD6HmiNUhxXYf8Gch723",
+        "time_signature": 4,
+        "popularity": 85,
+        "release_date": "2012-07-10",
+        "images": [
+            {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b2737aede4855f6d0d738012e2e5",
+                "width": 640
+            },
+            {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e027aede4855f6d0d738012e2e5",
+                "width": 300
+            },
+            {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d000048517aede4855f6d0d738012e2e5",
+                "width": 64
+            }
+        ],
+        "album": "channel ORANGE"
+    },
+    {
+        "artists": [
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/2h93pZq0e7k5yf4dywlkpM"
+                },
+                "href": "https://api.spotify.com/v1/artists/2h93pZq0e7k5yf4dywlkpM",
+                "id": "2h93pZq0e7k5yf4dywlkpM",
+                "name": "Frank Ocean",
+                "type": "artist",
+                "uri": "spotify:artist:2h93pZq0e7k5yf4dywlkpM"
+            },
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/0hEurMDQu99nJRq8pTxO14"
+                },
+                "href": "https://api.spotify.com/v1/artists/0hEurMDQu99nJRq8pTxO14",
+                "id": "0hEurMDQu99nJRq8pTxO14",
+                "name": "John Mayer",
+                "type": "artist",
+                "uri": "spotify:artist:0hEurMDQu99nJRq8pTxO14"
+            }
+        ],
+        "disc_number": 1,
+        "duration_ms": 76280,
+        "explicit": false,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/track/1VMdwVq0yaTc4DeqSCi7DO"
+        },
+        "href": "https://api.spotify.com/v1/tracks/1VMdwVq0yaTc4DeqSCi7DO",
+        "id": "1VMdwVq0yaTc4DeqSCi7DO",
+        "is_local": false,
+        "name": "White",
+        "preview_url": null,
+        "track_number": 12,
+        "type": "audio_features",
+        "uri": "spotify:track:1VMdwVq0yaTc4DeqSCi7DO",
+        "danceability": 0.608,
+        "energy": 0.0664,
+        "key": 1,
+        "loudness": -18.857,
+        "mode": 1,
+        "speechiness": 0.0596,
+        "acousticness": 0.758,
+        "instrumentalness": 0.945,
+        "liveness": 0.0978,
+        "valence": 0.294,
+        "tempo": 139.232,
+        "track_href": "https://api.spotify.com/v1/tracks/1VMdwVq0yaTc4DeqSCi7DO",
+        "analysis_url": "https://api.spotify.com/v1/audio-analysis/1VMdwVq0yaTc4DeqSCi7DO",
+        "time_signature": 4,
+        "popularity": 85,
+        "release_date": "2012-07-10",
+        "images": [
+            {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b2737aede4855f6d0d738012e2e5",
+                "width": 640
+            },
+            {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e027aede4855f6d0d738012e2e5",
+                "width": 300
+            },
+            {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d000048517aede4855f6d0d738012e2e5",
+                "width": 64
+            }
+        ],
+        "album": "channel ORANGE"
+    },
+    {
+        "artists": [
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/2h93pZq0e7k5yf4dywlkpM"
+                },
+                "href": "https://api.spotify.com/v1/artists/2h93pZq0e7k5yf4dywlkpM",
+                "id": "2h93pZq0e7k5yf4dywlkpM",
+                "name": "Frank Ocean",
+                "type": "artist",
+                "uri": "spotify:artist:2h93pZq0e7k5yf4dywlkpM"
+            }
+        ],
+        "disc_number": 1,
+        "duration_ms": 200240,
+        "explicit": true,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/track/0msrDPXxZpts4FRnoX0bFr"
+        },
+        "href": "https://api.spotify.com/v1/tracks/0msrDPXxZpts4FRnoX0bFr",
+        "id": "0msrDPXxZpts4FRnoX0bFr",
+        "is_local": false,
+        "name": "Monks",
+        "preview_url": null,
+        "track_number": 13,
+        "type": "audio_features",
+        "uri": "spotify:track:0msrDPXxZpts4FRnoX0bFr",
+        "danceability": 0.747,
+        "energy": 0.758,
+        "key": 0,
+        "loudness": -4.743,
+        "mode": 0,
+        "speechiness": 0.179,
+        "acousticness": 0.0521,
+        "instrumentalness": 0,
+        "liveness": 0.214,
+        "valence": 0.601,
+        "tempo": 102.02,
+        "track_href": "https://api.spotify.com/v1/tracks/0msrDPXxZpts4FRnoX0bFr",
+        "analysis_url": "https://api.spotify.com/v1/audio-analysis/0msrDPXxZpts4FRnoX0bFr",
+        "time_signature": 4,
+        "popularity": 85,
+        "release_date": "2012-07-10",
+        "images": [
+            {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b2737aede4855f6d0d738012e2e5",
+                "width": 640
+            },
+            {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e027aede4855f6d0d738012e2e5",
+                "width": 300
+            },
+            {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d000048517aede4855f6d0d738012e2e5",
+                "width": 64
+            }
+        ],
+        "album": "channel ORANGE"
+    },
+    {
+        "artists": [
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/2h93pZq0e7k5yf4dywlkpM"
+                },
+                "href": "https://api.spotify.com/v1/artists/2h93pZq0e7k5yf4dywlkpM",
+                "id": "2h93pZq0e7k5yf4dywlkpM",
+                "name": "Frank Ocean",
+                "type": "artist",
+                "uri": "spotify:artist:2h93pZq0e7k5yf4dywlkpM"
+            }
+        ],
+        "disc_number": 1,
+        "duration_ms": 175453,
+        "explicit": false,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/track/2pMPWE7PJH1PizfgGRMnR9"
+        },
+        "href": "https://api.spotify.com/v1/tracks/2pMPWE7PJH1PizfgGRMnR9",
+        "id": "2pMPWE7PJH1PizfgGRMnR9",
+        "is_local": false,
+        "name": "Bad Religion",
+        "preview_url": null,
+        "track_number": 14,
+        "type": "audio_features",
+        "uri": "spotify:track:2pMPWE7PJH1PizfgGRMnR9",
+        "danceability": 0.359,
+        "energy": 0.367,
+        "key": 9,
+        "loudness": -7.684,
+        "mode": 1,
+        "speechiness": 0.0335,
+        "acousticness": 0.738,
+        "instrumentalness": 1.43e-06,
+        "liveness": 0.0736,
+        "valence": 0.104,
+        "tempo": 83.331,
+        "track_href": "https://api.spotify.com/v1/tracks/2pMPWE7PJH1PizfgGRMnR9",
+        "analysis_url": "https://api.spotify.com/v1/audio-analysis/2pMPWE7PJH1PizfgGRMnR9",
+        "time_signature": 4,
+        "popularity": 85,
+        "release_date": "2012-07-10",
+        "images": [
+            {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b2737aede4855f6d0d738012e2e5",
+                "width": 640
+            },
+            {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e027aede4855f6d0d738012e2e5",
+                "width": 300
+            },
+            {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d000048517aede4855f6d0d738012e2e5",
+                "width": 64
+            }
+        ],
+        "album": "channel ORANGE"
+    },
+    {
+        "artists": [
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/2h93pZq0e7k5yf4dywlkpM"
+                },
+                "href": "https://api.spotify.com/v1/artists/2h93pZq0e7k5yf4dywlkpM",
+                "id": "2h93pZq0e7k5yf4dywlkpM",
+                "name": "Frank Ocean",
+                "type": "artist",
+                "uri": "spotify:artist:2h93pZq0e7k5yf4dywlkpM"
+            },
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/74V3dE1a51skRkdII8y2C6"
+                },
+                "href": "https://api.spotify.com/v1/artists/74V3dE1a51skRkdII8y2C6",
+                "id": "74V3dE1a51skRkdII8y2C6",
+                "name": "Andr\u00e9 3000",
+                "type": "artist",
+                "uri": "spotify:artist:74V3dE1a51skRkdII8y2C6"
+            }
+        ],
+        "disc_number": 1,
+        "duration_ms": 268813,
+        "explicit": true,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/track/1fOkmYW3ZFkkjIdOZSf596"
+        },
+        "href": "https://api.spotify.com/v1/tracks/1fOkmYW3ZFkkjIdOZSf596",
+        "id": "1fOkmYW3ZFkkjIdOZSf596",
+        "is_local": false,
+        "name": "Pink Matter",
+        "preview_url": null,
+        "track_number": 15,
+        "type": "audio_features",
+        "uri": "spotify:track:1fOkmYW3ZFkkjIdOZSf596",
+        "danceability": 0.392,
+        "energy": 0.233,
+        "key": 11,
+        "loudness": -11.012,
+        "mode": 0,
+        "speechiness": 0.0587,
+        "acousticness": 0.951,
+        "instrumentalness": 0.000322,
+        "liveness": 0.106,
+        "valence": 0.494,
+        "tempo": 176.569,
+        "track_href": "https://api.spotify.com/v1/tracks/1fOkmYW3ZFkkjIdOZSf596",
+        "analysis_url": "https://api.spotify.com/v1/audio-analysis/1fOkmYW3ZFkkjIdOZSf596",
+        "time_signature": 3,
+        "popularity": 85,
+        "release_date": "2012-07-10",
+        "images": [
+            {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b2737aede4855f6d0d738012e2e5",
+                "width": 640
+            },
+            {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e027aede4855f6d0d738012e2e5",
+                "width": 300
+            },
+            {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d000048517aede4855f6d0d738012e2e5",
+                "width": 64
+            }
+        ],
+        "album": "channel ORANGE"
+    },
+    {
+        "artists": [
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/2h93pZq0e7k5yf4dywlkpM"
+                },
+                "href": "https://api.spotify.com/v1/artists/2h93pZq0e7k5yf4dywlkpM",
+                "id": "2h93pZq0e7k5yf4dywlkpM",
+                "name": "Frank Ocean",
+                "type": "artist",
+                "uri": "spotify:artist:2h93pZq0e7k5yf4dywlkpM"
+            }
+        ],
+        "disc_number": 1,
+        "duration_ms": 194840,
+        "explicit": false,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/track/4YZbVct8l9MnAVIROnLQdx"
+        },
+        "href": "https://api.spotify.com/v1/tracks/4YZbVct8l9MnAVIROnLQdx",
+        "id": "4YZbVct8l9MnAVIROnLQdx",
+        "is_local": false,
+        "name": "Forrest Gump",
+        "preview_url": null,
+        "track_number": 16,
+        "type": "audio_features",
+        "uri": "spotify:track:4YZbVct8l9MnAVIROnLQdx",
+        "danceability": 0.701,
+        "energy": 0.417,
+        "key": 6,
+        "loudness": -7.818,
+        "mode": 0,
+        "speechiness": 0.0329,
+        "acousticness": 0.0888,
+        "instrumentalness": 0.000648,
+        "liveness": 0.375,
+        "valence": 0.186,
+        "tempo": 95.003,
+        "track_href": "https://api.spotify.com/v1/tracks/4YZbVct8l9MnAVIROnLQdx",
+        "analysis_url": "https://api.spotify.com/v1/audio-analysis/4YZbVct8l9MnAVIROnLQdx",
+        "time_signature": 4,
+        "popularity": 85,
+        "release_date": "2012-07-10",
+        "images": [
+            {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b2737aede4855f6d0d738012e2e5",
+                "width": 640
+            },
+            {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e027aede4855f6d0d738012e2e5",
+                "width": 300
+            },
+            {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d000048517aede4855f6d0d738012e2e5",
+                "width": 64
+            }
+        ],
+        "album": "channel ORANGE"
+    },
+    {
+        "artists": [
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/2h93pZq0e7k5yf4dywlkpM"
+                },
+                "href": "https://api.spotify.com/v1/artists/2h93pZq0e7k5yf4dywlkpM",
+                "id": "2h93pZq0e7k5yf4dywlkpM",
+                "name": "Frank Ocean",
+                "type": "artist",
+                "uri": "spotify:artist:2h93pZq0e7k5yf4dywlkpM"
+            }
+        ],
+        "disc_number": 1,
+        "duration_ms": 134600,
+        "explicit": false,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/track/05tFLPSXJ1BbqIXy4Jeqfh"
+        },
+        "href": "https://api.spotify.com/v1/tracks/05tFLPSXJ1BbqIXy4Jeqfh",
+        "id": "05tFLPSXJ1BbqIXy4Jeqfh",
+        "is_local": false,
+        "name": "End",
+        "preview_url": null,
+        "track_number": 17,
+        "type": "audio_features",
+        "uri": "spotify:track:05tFLPSXJ1BbqIXy4Jeqfh",
+        "danceability": 0.476,
+        "energy": 0.299,
+        "key": 2,
+        "loudness": -17.997,
+        "mode": 1,
+        "speechiness": 0.131,
+        "acousticness": 0.383,
+        "instrumentalness": 0.752,
+        "liveness": 0.0878,
+        "valence": 0.384,
+        "tempo": 119.487,
+        "track_href": "https://api.spotify.com/v1/tracks/05tFLPSXJ1BbqIXy4Jeqfh",
+        "analysis_url": "https://api.spotify.com/v1/audio-analysis/05tFLPSXJ1BbqIXy4Jeqfh",
+        "time_signature": 4,
+        "popularity": 85,
+        "release_date": "2012-07-10",
+        "images": [
+            {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b2737aede4855f6d0d738012e2e5",
+                "width": 640
+            },
+            {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e027aede4855f6d0d738012e2e5",
+                "width": 300
+            },
+            {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d000048517aede4855f6d0d738012e2e5",
+                "width": 64
+            }
+        ],
+        "album": "channel ORANGE"
+    }
+]
