@@ -78,23 +78,22 @@
     <button class="next-message" onclick="document.getElementById('closer-look-container').scrollIntoView()">Next</button>
 </div>
 
-<!--<div class="row slide">-->
-<!--    <section id="profile" style="color: white">-->
-<!--        <input type="button" id="getAuth" value="Request Authorization"></input>-->
-<!--        <h2>Logged in as <span id="displayName"></span></h2>-->
-<!--        <span id="avatar"></span>-->
-<!--        <ul>-->
-<!--            <li>User ID: <span id="id"></span></li>-->
-<!--            <li>Email: <span id="email"></span></li>-->
-<!--            <li>Spotify URI: <a id="uri" href="#"></a></li>-->
-<!--            <li>Link: <a id="url" href="#"></a></li>-->
-<!--            <li>Profile Image: <span id="imgUrl"></span></li>-->
-<!--        </ul>-->
-<!--    </section>-->
-<!--</div>-->
 
 <div class="row slide" id="closer-look-container">
-    <div id="closer-look-title">A Closer Look: Taylor Swift</div>
+    <div class="row selector">
+        <p>Choose another artist to explore!</p>
+        <select name="choice" id="artist-select">
+            <option value="beyonce" selected>Beyonce</option>
+            <option value="bts">BTS</option>
+            <option value="frank_ocean">Frank Ocean</option>
+            <option value="kendrick_lamar">Kendrick Lamar</option>
+            <option value="mcr">My Chemical Romance</option>
+            <option value="queen">Queen</option>
+            <option value="radio_head">Radio Head</option>
+            <option value="taylor_swift">Taylor Swift</option>
+        </select>
+    </div>
+    <div id="closer-look-title"></div>
     <div class="col" id="closerLookVis"></div>
     <div class="col" id="info-box">
     </div>

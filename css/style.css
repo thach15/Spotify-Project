@@ -18,9 +18,25 @@ button {
 	color:#FFD9CE;
 }
 
+.selector {
+	display: grid;
+	grid-template-columns: 300px 200px;
+	height: auto;
+	color: #FFD9CE !important;
+	width: auto;
+}
+
+select {
+	background-color: #171738;
+	color: #FFD9CE;
+	width: 70px;
+	border: #FFD9CE 3px solid;
+	border-radius: 3px;
+}
+
 .next {
 	position: absolute;
-	width: 70px;
+	width: auto;
 	height: 40px;
 	/*margin-top: 130px;*/
 	transform: translateY(91vh);

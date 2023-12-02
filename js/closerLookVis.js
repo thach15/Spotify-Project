@@ -1,28 +1,29 @@
 
 class CloserLookVis {
 
-    constructor(_parentElement, data, artistName, personalized) {
+    constructor(_parentElement, data, artistIndex) {
         this.parentElement = _parentElement;
         this.data = data;
-        this.selectedData = data
-        this.displayData = data;
+        this.index = artistIndex;
 
-        this.data.forEach(d => {
-            d["acousticness"] = +d["acousticness"];
-            d["danceability"] = +d["danceability"];
-            d["energy"] = +d["energy"];
-            d["instrumentalness"] = +d["instrumentalness"];
-            d["liveness"] = +d["liveness"];
-            d["loudness"] = +d["loudness"];
-            d["speechiness"] = +d["speechiness"];
-            d["valence"] = +d["valence"];
-            d["popularity"] = +d["popularity"];
-            d["duration_ms"] = +d["duration_ms"];
+        this.data.forEach(dataset => {
+            dataset.artist_data.forEach(d => {
+                d["acousticness"] = +d["acousticness"];
+                d["danceability"] = +d["danceability"];
+                d["energy"] = +d["energy"];
+                d["instrumentalness"] = +d["instrumentalness"];
+                d["liveness"] = +d["liveness"];
+                d["loudness"] = +d["loudness"];
+                d["speechiness"] = +d["speechiness"];
+                d["valence"] = +d["valence"];
+                d["popularity"] = +d["popularity"];
+                d["duration_ms"] = +d["duration_ms"];
+            })
         })
 
         this.formatDate = d3.timeFormat("%Y-%m-%d");
 
-        this.artist = artistName;
+        this.artist = data[artistIndex].artist_name;
 
         this.initVis();
     }
@@ -92,8 +93,11 @@ class CloserLookVis {
     wrangleData() {
         let vis = this;
 
-        vis.displayData.sort((a,b)=> a.release_date - b.release_date)
-        // console.log(vis.selectedData)
+        document.getElementById('closer-look-title').innerHTML = `A Closer Look: ${vis.data[vis.index].artist_name}`;
+        vis.selectedData = vis.data[vis.index].artist_data;
+        console.log(vis.selectedData);
+
+        vis.selectedData.sort((a,b)=> a.release_date - b.release_date)
 
         vis.displayData = vis.selectedData
             .map(d => d.album)
