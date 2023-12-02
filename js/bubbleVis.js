@@ -68,13 +68,13 @@ class BubbleVis {
             .attr("x", 20)
             .attr("y", 240)
             .attr("font-size",14)
-            .text("any range of years years and see which artists have had")
+            .text("any range of years and see which artists have had the")
 
         vis.svg.append("text")
             .attr("x", 20)
             .attr("y", 260)
             .attr("font-size",14)
-            .text("the most (and the least) hits in that time span.")
+            .text("most (and the least) hits in that time span.")
 
         vis.svg.append("text")
             .attr("x", 20)

@@ -36,12 +36,58 @@ class ChordVis {
             .attr('class', "tooltip")
             .attr('id', 'chordTooltip');
 
-        vis.svg.append("circle").attr("cx",230).attr("cy",140).attr("r", 6).style("fill", "#D7263D")
-        vis.svg.append("circle").attr("cx",230).attr("cy",165).attr("r", 6).style("fill", "#F46036")
-        vis.svg.append("circle").attr("cx",230).attr("cy",190).attr("r", 6).style("fill", "#FFD9CE")
-        vis.svg.append("text").attr("x", 250).attr("y", 141).text("Increase in streams from previous release").style("font-size", "13px").attr("alignment-baseline","middle")
-        vis.svg.append("text").attr("x", 250).attr("y", 166).text("Maintained streams from previous release").style("font-size", "13px").attr("alignment-baseline","middle")
-        vis.svg.append("text").attr("x", 250).attr("y", 191).text("Decrease in streams from previous release").style("font-size", "13px").attr("alignment-baseline","middle")
+        vis.questionTooltip = d3.select("body").append('div')
+            .attr('class', "tooltip")
+            .attr('id', 'questionTooltip');
+
+        vis.svg.append("circle").attr("cx", vis.width / 2 - 20).attr("cy", 0).attr("r", 8).style("fill", "#D7263D")
+        vis.svg.append("circle").attr("cx",vis.width / 2 - 20).attr("cy", 25).attr("r", 8).style("fill", "#F46036")
+        vis.svg.append("circle").attr("cx", vis.width / 2 - 20).attr("cy", 50).attr("r", 8).style("fill", "#FFD9CE")
+        vis.svg.append("text").attr("x", vis.width / 2).attr("y", 1).text("Increase in streams from previous release").style("font-size", "16px").attr("alignment-baseline","middle")
+        vis.svg.append("text").attr("x", vis.width / 2).attr("y", 26).text("Maintained streams from previous release").style("font-size", "16px").attr("alignment-baseline","middle")
+        vis.svg.append("text").attr("x", vis.width / 2).attr("y", 51).text("Decrease in streams from previous release").style("font-size", "16px").attr("alignment-baseline","middle")
+
+        vis.svg.append("circle").attr("cx", -250).attr("cy", -250).attr("r", 20).style("fill", "grey")
+            .on('mouseover', function(event, d){
+
+                d3.select(this)
+                    .attr('stroke-width', '1px')
+                    .attr('stroke', 'black')
+                    .attr('fill', 'black')
+                    .attr("opacity", "100%");
+
+                vis.tooltip
+                    .style("fill", "white")
+                    .style("opacity", 1)
+                    .style("left", event.pageX + 20 + "px")
+                    .style("top", event.pageY + "px")
+                    .html(`
+                         <div style="border: thin solid grey; border-radius: 5px; background: #f7e4f7; padding: 5px; height: 100px; width: 300px">
+                             <p><b>How to read:</b> Follow a chord from one range of 100 million streams to another, and use the legend to match the chord to an increase, decrease, or maintenance of streams.</p>                   
+                         </div>`);
+            })
+            .on('mouseout', function(event, d){
+                d3.select(this)
+                    .attr("fill", "#FFD9CE")
+                    .style("stroke", "#FFD9CE")
+                    .attr("stroke-width", 0.25)
+                    .attr("opacity", "80%");
+
+                vis.tooltip
+                    .style("opacity", 0)
+                    .style("left", 0)
+                    .style("top", 0)
+                    .html(``);
+            })
+
+        vis.svg.append("text").attr("x", -255).attr("y", -248).text("?").style("font-size", "22px").attr("alignment-baseline","middle")
+
+
+        vis.svg.append("rect").attr("x", vis.width / 2 - 40).attr("y", -20)
+            .attr("height", 90)
+            .attr("width", 350)
+            .attr("stroke", "white")
+            .attr("fill", "none")
 
         vis.svg.append("text")
             .attr("x", vis.width - vis.margin.right)
@@ -54,35 +100,35 @@ class ChordVis {
             .attr("x", vis.width - vis.margin.right)
             .attr("y", -260)
             .attr("text-anchor", 'end')
-            .attr("font-size",14)
+            .attr("font-size",18)
             .text("Looking at the artists who released the songs with the most streams")
 
         vis.svg.append("text")
             .attr("x", vis.width - vis.margin.right)
             .attr("y", -240)
             .attr("text-anchor", 'end')
-            .attr("font-size",14)
+            .attr("font-size",18)
             .text("in 2023, we can see how many artists were able to grow in streams")
 
         vis.svg.append("text")
             .attr("x", vis.width - vis.margin.right)
             .attr("y", -220)
             .attr("text-anchor", 'end')
-            .attr("font-size",14)
+            .attr("font-size",18)
             .text("from one release to the next consecutive one, how many stayed in")
 
         vis.svg.append("text")
             .attr("x", vis.width - vis.margin.right)
             .attr("y", -200)
             .attr("text-anchor", 'end')
-            .attr("font-size",14)
+            .attr("font-size",18)
             .text("the same range, and how many shrunk in stream range,")
 
         vis.svg.append("text")
             .attr("x", vis.width - vis.margin.right)
             .attr("y", -180)
             .attr("text-anchor", 'end')
-            .attr("font-size",14)
+            .attr("font-size",18)
             .text("for each range of 100 million streams.")
 
         vis.wrangleData()
