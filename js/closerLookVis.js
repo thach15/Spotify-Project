@@ -168,8 +168,7 @@ class CloserLookVis {
             .curve(d3.curveLinear);
 
         vis.lineChart = vis.svg.selectAll(".line")
-            .data(vis.displayData)
-            .attr("class", "line");
+            .data(vis.displayData);
 
         vis.lineChart.exit().remove();
 
@@ -186,8 +185,7 @@ class CloserLookVis {
 
         // Create data point circles
         vis.circles = vis.svg.selectAll(".circles")
-            .data(vis.displayData)
-            .attr("class", "circles");
+            .data(vis.displayData);
 
         vis.circles.exit().remove();
 

@@ -21,15 +21,19 @@ button {
 .selector {
 	display: grid;
 	grid-template-columns: 300px 200px;
+	align-items: center;
 	height: auto;
 	color: #FFD9CE !important;
 	width: auto;
+	transform: translate(32vw, 50px);
 }
 
+
 select {
+	display: grid;
 	background-color: #171738;
 	color: #FFD9CE;
-	width: 70px;
+	height: 40px;
 	border: #FFD9CE 3px solid;
 	border-radius: 3px;
 }
@@ -39,7 +43,7 @@ select {
 	width: auto;
 	height: 40px;
 	/*margin-top: 130px;*/
-	transform: translateY(91vh);
+	transform: translate(4vw, 91vh);
 }
 
 .prev {
@@ -47,7 +51,7 @@ select {
 	width: 100px;
 	height: 40px;
 	/*margin-top: 130px;*/
-	transform: translate(-42vw, 3vh);
+	transform: translate(-4vw, 91vh);
 }
 
 .next-message {
@@ -55,7 +59,7 @@ select {
 	width: 70px;
 	height: 40px;
 	/*margin-top: 130px;*/
-	transform: translateY(43vh);
+	transform: translate(4vw, 43vh);
 }
 
 .prev-message {
@@ -63,7 +67,7 @@ select {
 	width: 100px;
 	height: 40px;
 	/*margin-top: 130px;*/
-	transform: translate(-42vw, -45vh);
+	transform: translate(-4vw, 43vh);
 }
 
 .intro {
@@ -274,7 +278,7 @@ text {
 }
 
 #closer-look-title {
-	margin-top: 70px;
+	margin-top: 20px;
 	margin-bottom: 20px;
 	color: white;
 	font-size: 30px;
