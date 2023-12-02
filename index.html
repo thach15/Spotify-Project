@@ -29,12 +29,14 @@
             early 21st century. Let's get to it!
         </div>
     </div>
-    <button class="next" onclick="document.getElementById('bubbleVis').scrollIntoView()">Next</button>
+    <div class="nav">
+        <button class="next" onclick="document.getElementById('bubble-slide').scrollIntoView()">Next</button>
+    </div>
 </div>
 
-<div class="row slide" style="height: 300px"></div>
+<div class="row filler"></div>
 
-<div class="row slide" id="bubbleVis">
+<div class="row slide" id="bubble-slide">
     <select name="choice" id="bubble-select" onchange="bubbleSelection()">
         <option value="2016-2020" selected>2016 - 2020</option>
         <option value="2011-2015">2011 - 2015</option>
@@ -42,18 +44,24 @@
         <option value="2001-2005">2001 - 2005</option>
         <option value="1998-2000">1998 - 2000</option>
     </select>
-    <button class="prev" onclick="document.getElementById('title').scrollIntoView()">Previous</button>
-    <button class="next" onclick="document.getElementById('chordVis').scrollIntoView()">Next</button>
+    <div id="bubbleVis"></div>
+    <div class="nav">
+        <button class="prev" onclick="document.getElementById('title').scrollIntoView()">Previous</button>
+        <button class="next" onclick="document.getElementById('chordVis').scrollIntoView()">Next</button>
+    </div>
 </div>
 
-<div class="row slide" style="height: 300px"></div>
+<div class="row filler"></div>
 
-<div class="row slide" id="chordVis">
-    <button class="prev" onclick="document.getElementById('bubbleVis').scrollIntoView()">Previous</button>
-    <button class="next" onclick="document.getElementById('hist-container').scrollIntoView()">Next</button>
+<div class="row slide">
+    <div id="chordVis"></div>
+    <div class="nav">
+        <button class="prev" onclick="document.getElementById('bubble-slide').scrollIntoView()">Previous</button>
+        <button class="next" onclick="document.getElementById('hist-container').scrollIntoView()">Next</button>
+    </div>
 </div>
 
-<div class="row slide" style="height: 300px"></div>
+<div class="row filler"></div>
 
 <div class="row slide" id="hist-container">
     <div id="hist-title">Evolution of Song Duration 1999-2019</div>
@@ -74,11 +82,11 @@
     <button class="next" onclick="document.getElementById('main-message').scrollIntoView()">Next</button>
 </div>
 
-<div class="row slide" style="height: 300px"></div>
+<div class="row filler"></div>
 
 <div class="row slide" style="align-items: center" id="main-message">
     <div id="message-container">
-        <span id="message-title">Our Message</span>
+        <h1 id="message-title">Our Message</h1>
         <p>The makings of a popular song is attributable to the song's length, energy, and the key that it is in.</p>
         <p style="color: #C5D86D">Before we begin our exploration, we need to define some key terms.</p>
         <p><strong style="color:#593C8F">Danceability: </strong>Tells you how suitable is the song for getting your groove on.</p>
@@ -87,37 +95,35 @@
         <p><strong style="color:#593C8F">Speechiness: </strong>The amount of spoken words other than your own as you appreciate the song.</p>
     </div>
     <button class="prev-message" onclick="document.getElementById('hist-container').scrollIntoView()">Previous</button>
-    <button class="next-message" onclick="document.getElementById('closer-look-container').scrollIntoView()">Next</button>
+    <button class="next-message" onclick="document.getElementById('select-genre').scrollIntoView()">Next</button>
 </div>
 
-<div class="row slide" style="height: 300px"></div>
+<div class="row filler"></div>
 
 <div class="row slide" id="select-genre">
     <div>
-        <p style="color: white">Select your favorite genre of music</p>
-        <button class="genre-button">Pop</button>
-        <button class="genre-button">Rock</button>
-        <button class="genre-button">Rap</button>
-        <button class="genre-button">Emo</button>
-        <button class="genre-button">Kpop</button>
-        <button class="genre-button">R&B</button>
+        <h2 style="color: white; margin-bottom: 50px">Explore an artist! Pick your favorite genre of music:</h2>
+        <button class="genre-button" id="0">Pop</button>
+        <button class="genre-button" id="5">Rock</button>
+        <button class="genre-button" id="3">Rap</button>
+        <button class="genre-button" id="4">Emo</button>
+        <button class="genre-button" id="1">Kpop</button>
+        <button class="genre-button" id="2">R&B</button>
     </div>
-    <button class="prev" onclick="document.getElementById('main-message').scrollIntoView()">Previous</button>
-    <button class="next" onclick="document.getElementById('closer-look-container').scrollIntoView()">Next</button>
 </div>
 
-<div class="row slide" style="height: 300px"></div>
+<div class="row filler"></div>
     
 <div class="row slide" id="closer-look-container">
     <div class="row selector">
-        <div style="margin-top: 20px">
+        <div style="width: fit-content; margin-top: 20px">
             <p>Choose another artist to explore!</p>
         </div>
-        <div>
+        <div style="width: fit-content">
             <select name="choice" id="artist-select">
                 <option value="beyonce" selected>Beyonce</option>
                 <option value="bts">BTS</option>
-                <option value="frank_ocean">Frank Ocean</option>
+                <option value="weeknd">The Weeknd</option>
                 <option value="kendrick_lamar">Kendrick Lamar</option>
                 <option value="mcr">My Chemical Romance</option>
                 <option value="queen">Queen</option>
@@ -127,10 +133,14 @@
         </div>
     </div>
     <div id="closer-look-title"></div>
-    <div class="col" id="closerLookVis"></div>
-    <div class="col" id="info-box">
+    <div class="row">
+        <div class="col" id="closerLookVis"></div>
+        <div class="col" id="info-box">
     </div>
-    <button class="prev" onclick="document.getElementById('main-message').scrollIntoView()">Previous</button>
+    </div>
+    <div class="nav">
+        <button class="prev-last" onclick="document.getElementById('main-message').scrollIntoView()">Back to Main Message</button>
+    </div>
 </div>
 
 

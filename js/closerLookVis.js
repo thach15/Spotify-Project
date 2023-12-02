@@ -32,10 +32,10 @@ class CloserLookVis {
     initVis() {
         let vis = this;
 
-        vis.margin = { top: 20, right: 20, bottom: 200, left: 80 };
+        vis.margin = { top: 50, right: 20, bottom: 110, left: 60 };
 
-        vis.width = 840 - vis.margin.left - vis.margin.right;
-        vis.height = 600 - vis.margin.top - vis.margin.bottom;
+        vis.width = 580 - vis.margin.left - vis.margin.right;
+        vis.height = 440 - vis.margin.top - vis.margin.bottom;
 
         // SVG drawing area
         vis.svg = d3.select("#" + vis.parentElement).append("svg")
@@ -106,7 +106,7 @@ class CloserLookVis {
                 return {
                     "album": d,
                     "rows": [],
-                    "avgPopularity": 0
+                    "avgPopularity": 0,
                 };
             });
 
@@ -137,7 +137,7 @@ class CloserLookVis {
             var self = d3.select(this),
                 textLength = self.node().getComputedTextLength(),
                 text = self.text();
-            while (textLength > (150) && text.length > 0) {
+            while (textLength > (130) && text.length > 0) {
                 text = text.slice(0, -1);
                 self.text(text + '...');
                 textLength = self.node().getComputedTextLength();
@@ -153,7 +153,7 @@ class CloserLookVis {
             .call(vis.xAxis)
             .selectAll("text")
             .style("text-anchor", "end")
-            .attr("transform", "rotate(-50)")
+            .attr("transform", "rotate(-45)")
             .each(wrap);
 
         // Update y axis
@@ -167,8 +167,8 @@ class CloserLookVis {
             .y(function (d) { return vis.y(d.avgPopularity) })
             .curve(d3.curveLinear);
 
-        vis.lineChart = vis.svg.selectAll(".line")
-            .data(vis.displayData);
+        vis.lineChart = vis.svg.selectAll(".line-chart")
+            .data([vis.displayData]);
 
         vis.lineChart.exit().remove();
 
@@ -177,7 +177,7 @@ class CloserLookVis {
             .merge(vis.lineChart)
             .transition()
             .duration(800)
-            .attr("class", "line")
+            .attr("class", "line-chart")
             .attr("d", line(vis.displayData))
             .attr("fill", "none")
             .attr("stroke", "#DB5461")
@@ -213,12 +213,17 @@ class CloserLookVis {
     showInfo(d){
         let vis = this;
 
+        vis.height = 300 - vis.margin.top - vis.margin.bottom;
+        vis.svg.attr("height", vis.height + vis.margin.top + vis.margin.bottom);
+
         vis.infoBox.style("background-color", "#593C8F")
         vis.infoBox.html("");
-        vis.infoBox.append("h3").attr("id", "album-title").text(d.album)
-        vis.infoBox.append("p").attr("class", "album-info").text(`Release Date: ${d.rows[0].release_date}`)
-        vis.infoBox.append("div")
-            .attr("id", "attributes")
+        let left = vis.infoBox.append("div").attr("class", "col").style("margin-left", "10px");
+        let right = vis.infoBox.append("div").attr("class", "col").attr("id", "attributes");
+
+        left.append("h3").attr("id", "album-title").text(d.album)
+        left.append("img").attr("src", d.rows[0].images[1].url).attr("height", 250)
+        left.append("p").attr("class", "album-info").text(`Release Date: ${d.rows[0].release_date}`)
         console.log(d.rows[0])
 
         let danceability = new Attribute("attributes", "danceability", d.rows)
@@ -241,10 +246,10 @@ class Attribute {
     initVis() {
         let vis = this;
 
-        vis.margin = { top: 20, right: 15, bottom: 25, left: 15 };
+        vis.margin = { top: 35, right: 15, bottom: 35, left: 15 };
 
-        vis.width = 110 - vis.margin.left - vis.margin.right;
-        vis.height = 250 - vis.margin.top - vis.margin.bottom;
+        vis.width = 80 - vis.margin.left - vis.margin.right;
+        vis.height = 200 - vis.margin.top - vis.margin.bottom;
 
         vis.svg = d3.select("#" + vis.parentElement).append("svg")
             .attr("width", vis.width + vis.margin.left + vis.margin.right)
@@ -259,7 +264,8 @@ class Attribute {
 
         vis.svg.append("text")
             .attr("x", vis.margin.left + vis.width / 2)
-            .attr("y", vis.height + vis.margin.top + vis.margin.bottom - 5)
+            .attr("y", vis.height + vis.margin.top + vis.margin.bottom - 15)
+            .attr("font-size", 12)
             .style("text-anchor", "middle")
             .text(vis.attribute);
 
@@ -284,7 +290,7 @@ class Attribute {
 
         vis.svg.append("text")
             .attr("x", vis.margin.left + vis.width / 2)
-            .attr("y", 12)
+            .attr("y", 27)
             .style("text-anchor", "middle")
             .text(percentage(vis.avg))
 

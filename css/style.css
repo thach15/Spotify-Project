@@ -7,10 +7,6 @@ body {
 	/*background-color: black;*/
 }
 
-
-h1 {
-}
-
 button {
 	background-color: #171738;
 	border-radius: 10px;
@@ -19,15 +15,16 @@ button {
 }
 
 .selector {
-	display: grid;
-	grid-template-columns: 300px 200px;
+	display: flex;
+	flex-flow: row;
+	flex-direction: row;
 	align-items: center;
-	height: auto;
+	justify-content: flex-end;
 	color: #FFD9CE !important;
-	width: auto;
-	transform: translate(32vw, 50px);
+	width: 100vw;
+	transform: translateY(20px);
+	height: fit-content;
 }
-
 
 select {
 	display: grid;
@@ -38,20 +35,30 @@ select {
 	border-radius: 3px;
 }
 
+.nav {
+	display: grid;
+	grid-template-columns: 100px 100px;
+	justify-content: center;
+}
+
 .next {
-	position: absolute;
-	width: auto;
+	/*position: absolute;*/
+	width: 100px;
 	height: 40px;
+	margin-left: 10px;
 	/*margin-top: 130px;*/
-	transform: translate(4vw, 91vh);
+	/*transform: translate(4vw, 91vh);*/
 }
 
 .prev {
-	position: absolute;
-	width: 100px;
+	width: fit-content;
 	height: 40px;
-	/*margin-top: 130px;*/
-	transform: translate(-4vw, 91vh);
+	margin-right: 10px;
+}
+
+.prev-last {
+	width: 200px;
+	height: 40px;
 }
 
 .next-message {
@@ -72,13 +79,12 @@ select {
 
 .intro {
 	color: #FFD9CE;
-	margin-top: 50px;
+	margin-top: 30px;
 }
 
 .intro-container {
 	max-width: 700px;
-	margin-top: 100px;
-
+	margin-top: 20px;
 }
 
 .intro-slide {
@@ -108,13 +114,19 @@ text {
 }
 
 .slide {
+	/*display: grid;*/
 	background-color: #171738;
 	height: 100vh;
+	min-height: 700px;
 	width: auto;
-	/*display: flex;*/
 	justify-content: center;
-	/*align-items: center;*/
 	text-align: center;
+	padding: 0;
+}
+
+.filler {
+	background-color: #171738;
+	height: 300px;
 }
 
 #button-container {
@@ -127,13 +139,13 @@ text {
 
 
 #hist-title {
-	margin-top: 60px;
+	margin-top: 20px;
 	margin-bottom: 30px;
 	font-family: Tahoma;
 	/*font-weight: bold;*/
 	color: white;
 	font-size: 30px;
-	margin-left: 20px;
+	/*margin-left: 20px;*/
 	align-self: center;
 }
 #yearRange {
@@ -215,6 +227,7 @@ text {
 #message-title{
 	font-weight: bold;
 	font-size: 30px;
+	margin-bottom: 30px;
 }
 
 #message-container {
@@ -222,7 +235,7 @@ text {
 	color: white;
 	--border-size: 3px;
 	--border-angle: 0turn;
-	height: 50vmin;
+	height: 60vmin;
 	background-image: conic-gradient(
 			from var(--border-angle),
 			#112,
@@ -255,10 +268,8 @@ text {
 }
 
 /* CloserLookVis */
-#songs-list {
-	width: 350px;
-	max-height: 450px;
-	overflow: scroll;
+#closer-look-container {
+	display: grid;
 }
 
 #info-box {
@@ -266,33 +277,43 @@ text {
 	align-items: center;
 	justify-content: center;
 	color: white;
+	width: 560px;
+	height: 450px;
 }
 
 #info {
-	/*box-shadow: 0 4px 8px 0 #2E294E, 0 6px 20px 0 #2E294E;*/
-	/*background-color: #8EF9F3;*/
-	width: 500px;
+	display: flex;
+	flex-direction: row;
+	width: 560px;
 	padding: 20px;
-	margin-left: 15px;
-	margin-top: 35px;
+	margin-left: 10px;
 }
 
 #closer-look-title {
-	margin-top: 20px;
-	margin-bottom: 20px;
 	color: white;
 	font-size: 30px;
-	margin-left: 20px;
+	/*margin-left: 20px;*/
+}
+
+#attributes {
+	margin-left: 40px;
+	display: flex;
+	flex-direction: row;
+	max-width: 200px;
+	flex-wrap: wrap;
 }
 
 #album-title {
 	color: white;
-	margin-bottom: 24px;
+	margin-bottom: 20px;
+	font-size: 20px;
 }
 
 .album-info {
+	display: block;
 	color: white;
-	margin-bottom: 30px;
+	margin-top: 45px;
+	margin-bottom: 0px;
 }
 .genre-button{
 	border-radius: 50%;

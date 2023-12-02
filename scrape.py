@@ -13,12 +13,12 @@ artist_uris = [
     "spotify:artist:06HL4z0CvFAxyc27GXpf02", # TSwift
     "spotify:artist:4Z8W4fKeB5YxbusRsdQVPb", # Radio Head
     "spotify:artist:7FBcuc1gsnv6Y1nwFtNRCb", # My Chemical Romance
-    "spotify:artist:2h93pZq0e7k5yf4dywlkpM", # Frank Ocean
+    "spotify:artist:1Xyo4u8uXC1ZmMpatF05PJ", # The Weeknd
     "spotify:artist:2YZyLoL8N0Wb9xBt1NhZWg", # Kendrick Lamar
     "spotify:artist:1dfeR4HaWDbWqFHLkxsg1d" # Queen
 ]
 
-artists = ["BTS", "Beyonce", "TSwift", "RadioHead", "MCR", "FrankOcean", "KendrickLamar", "Queen"]
+artists = ["BTS", "Beyonce", "TSwift", "RadioHead", "MCR", "TheWeeknd", "KendrickLamar", "Queen"]
 
 for i, uri in enumerate(artist_uris):
     results = sp.artist_albums(uri, album_type='album')

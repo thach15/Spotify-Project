@@ -20,10 +20,10 @@ class ChordVis {
     initVis() {
         let vis = this;
 
-        vis.margin = { top: 70, right: 100, bottom: 100, left: 400 };
+        vis.margin = { top: 0, right: 100, bottom: 100, left: 400 };
 
         vis.width = document.getElementById(vis.parentElement).getBoundingClientRect().width - vis.margin.left - vis.margin.right;
-        vis.height = 750 - vis.margin.top - vis.margin.bottom;
+        vis.height = 620 - vis.margin.top - vis.margin.bottom;
 
         // SVG drawing area
         vis.svg = d3.select("#" + vis.parentElement).append("svg")
@@ -47,7 +47,7 @@ class ChordVis {
         vis.svg.append("text").attr("x", vis.width / 2).attr("y", 26).text("Maintained streams from previous release").style("font-size", "16px").attr("alignment-baseline","middle")
         vis.svg.append("text").attr("x", vis.width / 2).attr("y", 51).text("Decrease in streams from previous release").style("font-size", "16px").attr("alignment-baseline","middle")
 
-        vis.svg.append("circle").attr("cx", -250).attr("cy", -250).attr("r", 20).style("fill", "grey")
+        vis.svg.append("circle").attr("cx", -250).attr("cy", -270).attr("r", 20).style("fill", "grey")
             .on('mouseover', function(event, d){
 
                 d3.select(this)
@@ -80,7 +80,7 @@ class ChordVis {
                     .html(``);
             })
 
-        vis.svg.append("text").attr("x", -255).attr("y", -248).text("?").style("font-size", "22px").attr("alignment-baseline","middle")
+        vis.svg.append("text").attr("x", -255).attr("y", -268).text("?").style("font-size", "22px").attr("alignment-baseline","middle")
 
 
         vis.svg.append("rect").attr("x", vis.width / 2 - 40).attr("y", -20)
@@ -91,42 +91,42 @@ class ChordVis {
 
         vis.svg.append("text")
             .attr("x", vis.width - vis.margin.right)
-            .attr("y", -320)
+            .attr("y", -350)
             .attr("text-anchor", 'end')
             .attr("font-size", 30)
             .text("2023's Most Popular Artists: How Their Streams Varied")
 
         vis.svg.append("text")
             .attr("x", vis.width - vis.margin.right)
-            .attr("y", -260)
+            .attr("y", -280)
             .attr("text-anchor", 'end')
             .attr("font-size",18)
             .text("Looking at the artists who released the songs with the most streams")
 
         vis.svg.append("text")
             .attr("x", vis.width - vis.margin.right)
-            .attr("y", -240)
+            .attr("y", -260)
             .attr("text-anchor", 'end')
             .attr("font-size",18)
             .text("in 2023, we can see how many artists were able to grow in streams")
 
         vis.svg.append("text")
             .attr("x", vis.width - vis.margin.right)
-            .attr("y", -220)
+            .attr("y", -240)
             .attr("text-anchor", 'end')
             .attr("font-size",18)
             .text("from one release to the next consecutive one, how many stayed in")
 
         vis.svg.append("text")
             .attr("x", vis.width - vis.margin.right)
-            .attr("y", -200)
+            .attr("y", -220)
             .attr("text-anchor", 'end')
             .attr("font-size",18)
             .text("the same range, and how many shrunk in stream range,")
 
         vis.svg.append("text")
             .attr("x", vis.width - vis.margin.right)
-            .attr("y", -180)
+            .attr("y", -200)
             .attr("text-anchor", 'end')
             .attr("font-size",18)
             .text("for each range of 100 million streams.")

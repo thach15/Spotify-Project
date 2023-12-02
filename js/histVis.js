@@ -14,10 +14,10 @@ class HistVis {
     initVis() {
         let vis = this;
 
-        vis.margin = {top: 50, right: 70, bottom: 200, left: 100};
+        vis.margin = {top: 50, right: 70, bottom: 60, left: 100};
 
         vis.width = document.getElementById(vis.parentElement).getBoundingClientRect().width - vis.margin.left - vis.margin.right;
-        vis.height = 440;
+        vis.height = 400;
 
         // SVG drawing area
         vis.svg = d3.select("#" + vis.parentElement).append("svg")

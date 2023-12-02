@@ -11,7 +11,7 @@ let promises = [
     d3.csv("Data/top-hits.csv"),
     d3.json("Data/Beyonce.json"),
     d3.json("Data/BTS.json"),
-    d3.json("Data/FrankOcean.json"),
+    d3.json("Data/TheWeeknd.json"),
     d3.json("Data/KendrickLamar.json"),
     d3.json("Data/MCR.json"),
     d3.json("Data/Queen.json"),
@@ -35,7 +35,7 @@ async function createVis(data) {
     let closerLookData = [
         { artist_name: "Beyonce", artist_data: data[2] },
         { artist_name: "BTS", artist_data: data[3] },
-        { artist_name: "Frank Ocean", artist_data: data[4] },
+        { artist_name: "The Weeknd", artist_data: data[4] },
         { artist_name: "Kendrick Lamar", artist_data: data[5] },
         { artist_name: "My Chemical Romance", artist_data: data[6] },
         { artist_name: "Queen", artist_data: data[7] },
@@ -43,6 +43,10 @@ async function createVis(data) {
         { artist_name: "Taylor Swift", artist_data: data[9] }
     ]
 
+    let genreButtons = document.getElementsByClassName('genre-button');
+    Array.from(genreButtons).forEach(gb => gb.addEventListener('click', () => genreButton(gb.id)));
+    let bubbleSelectBox = document.getElementById('bubble-select');
+    bubbleSelectBox.addEventListener('change', bubbleSelection);
     let artistSelectBox = document.getElementById('artist-select');
     artistSelectBox.addEventListener('change', artistSelection);
     bubbleVis = new BubbleVis("bubbleVis", topHits);
@@ -58,6 +62,12 @@ function bubbleSelection() {
     bubbleVis.wrangleData();
 }
 
+function genreButton(id) {
+    closerLookVis.index = id;
+    closerLookVis.wrangleData();
+    document.getElementById('closer-look-container').scrollIntoView();
+}
+
 function artistSelection() {
     let artist = document.getElementById('artist-select').value;
 
@@ -68,7 +78,7 @@ function artistSelection() {
         case 'bts':
             closerLookVis.index = 1;
             break;
-        case 'frank_ocean':
+        case 'weeknd':
             closerLookVis.index = 2;
             break;
         case 'kendrick_lamar':

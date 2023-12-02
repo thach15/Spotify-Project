@@ -17,10 +17,10 @@ class BubbleVis {
     initVis() {
         let vis = this;
 
-        vis.margin = {top: 80, right: 80, bottom: 200, left: 40};
+        vis.margin = {top: 20, right: 80, bottom: 0, left: 40};
 
         vis.width = document.getElementById(vis.parentElement).getBoundingClientRect().width - vis.margin.left - vis.margin.right;
-        vis.height = 800 - vis.margin.top - vis.margin.bottom;
+        vis.height = 540 - vis.margin.top - vis.margin.bottom;
 
         // SVG drawing area
         vis.svg = d3.select("#" + vis.parentElement).append("svg")
@@ -49,37 +49,37 @@ class BubbleVis {
             .attr("x", vis.width)
             .attr("y", 200)
             .attr("text-anchor", "end")
-            .attr("font-size",14)
+            .attr("font-size",17)
             .text("Hover over a bubble to find out top artists and their hit count!")
 
         vis.svg.append("text")
             .attr("x", 20)
             .attr("y", 200)
-            .attr("font-size",14)
+            .attr("font-size",18)
             .text("Using data collected on the most popular songs")
 
         vis.svg.append("text")
             .attr("x", 20)
             .attr("y", 220)
-            .attr("font-size",14)
+            .attr("font-size",18)
             .text("on Spotify released from 1998 to 2020, we can select")
 
         vis.svg.append("text")
             .attr("x", 20)
             .attr("y", 240)
-            .attr("font-size",14)
+            .attr("font-size",18)
             .text("any range of years and see which artists have had the")
 
         vis.svg.append("text")
             .attr("x", 20)
             .attr("y", 260)
-            .attr("font-size",14)
+            .attr("font-size",18)
             .text("most (and the least) hits in that time span.")
 
         vis.svg.append("text")
             .attr("x", 20)
             .attr("y", 280)
-            .attr("font-size",14)
+            .attr("font-size",18)
             .text("The larger the bubble, the higher the number of hits!")
 
         vis.wrangleData()
